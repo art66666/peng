@@ -1,0 +1,9 @@
+-
+  name: 查询房间数据
+  method: get
+  data:
+    size: '10000000'
+    current: '1'
+    lineCode: '01'
+    stationCode: '001'
+    roomCode: '00101'

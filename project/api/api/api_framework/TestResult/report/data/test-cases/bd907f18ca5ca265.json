@@ -1,0 +1,108 @@
+{
+  "uid" : "bd907f18ca5ca265",
+  "name" : "test_menu",
+  "fullName" : "TestCases.test_menu.test_menu.TestMenu#test_menu",
+  "historyId" : "d1afbd4c58ebce3966719634f262fa42",
+  "time" : {
+    "start" : 1625794696511,
+    "stop" : 1625794696566,
+    "duration" : 55
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "login_api",
+    "time" : {
+      "start" : 1625794696313,
+      "stop" : 1625794696510,
+      "duration" : 197
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "3eafcb1df3f072f4",
+      "name" : "log",
+      "source" : "3eafcb1df3f072f4.txt",
+      "type" : "text/plain",
+      "size" : 702
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "login_api::0",
+    "time" : {
+      "start" : 1625794696566,
+      "stop" : 1625794696567,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "获取菜单接口"
+  }, {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('login_api')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCases.test_menu"
+  }, {
+    "name" : "suite",
+    "value" : "test_menu"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestMenu"
+  }, {
+    "name" : "host",
+    "value" : "WIN-SUR8JRUF123"
+  }, {
+    "name" : "thread",
+    "value" : "1968-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCases.test_menu.test_menu"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "@pytest.mark.usefixtures('login_api')" ]
+  },
+  "source" : "bd907f18ca5ca265.json",
+  "parameterValues" : [ ]
+}

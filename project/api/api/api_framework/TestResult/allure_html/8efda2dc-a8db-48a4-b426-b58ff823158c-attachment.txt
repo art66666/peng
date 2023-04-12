@@ -1,0 +1,2 @@
+INFO     1.txt:my_log.py:29 *********登录接口开始测试*******
+INFO     1.txt:my_log.py:29 {'name': '正常登录', 'requests': {'method': 'get', 'headers': {'Authorization': 'Basic aW9tczppb21z'}, 'data': {'username': 'admin', 'password': '7G8EqAsTPjxcn4Mmn7LSpQ==', 'grant_type': 'password'}}, 'except': {'username': 'admin', 'msg': ''}}

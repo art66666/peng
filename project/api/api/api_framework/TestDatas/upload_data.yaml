@@ -1,0 +1,16 @@
+-
+  name: 正常上传图片
+  request:
+    data:
+      file: open(r"E:\cqc\apache-jmeter-5.1.1\csv\123.png",'rb')
+  except:
+    msg: 上传成功！
+
+
+-
+  name: 正常上传文件
+  request:
+    data:
+      file: open(r"E:\cqc\apache-jmeter-5.1.1\csv\advanced.docx",'rb')
+  except:
+    msg: 上传成功！

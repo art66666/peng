@@ -1,0 +1,5 @@
+INFO     1.txt:my_log.py:27 *******测试接口前登陆操作*********
+INFO     1.txt:my_log.py:27 *******接口请求
+INFO     1.txt:my_log.py:27 ******存储access_token*******Bearer 5e4b5d16-8d50-4f87-a502-ed1a3849a891
+INFO     1.txt:my_log.py:27 返回数据"111"与数据断言"111"一致，断言通过
+INFO     1.txt:my_log.py:27 ******接口测试结束******

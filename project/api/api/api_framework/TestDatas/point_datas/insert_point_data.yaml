@@ -1,0 +1,40 @@
+-
+  name: 正常新增数据
+  method: post
+  data:
+    code:
+    deviceCode: 30022201001030301030100100003
+    enableStatus: 0
+    id: 46
+    infoCode:
+    lineCode: '01'
+    partCode:
+    pcode:
+    pointCode: 01001030301030100100003002
+    pointName: 测试数据
+    pointType: 0001
+    roomCode: '00101'
+    stationCode: '001'
+    useTo: 0
+  except:
+    msg: 保存成功
+-
+  name: 新增重复数据
+  method: post
+  data:
+    code:
+    deviceCode: 30022201001030301030100100003
+    enableStatus: 0
+    id:
+    infoCode:
+    lineCode: '01'
+    partCode:
+    pcode:
+    pointCode: 01001030301030100100003002
+    pointName: 测试数据
+    pointType: 0001
+    roomCode: '00101'
+    stationCode: '001'
+    useTo: 0
+  except:
+    msg: 同一个房间中存在名称重复的点位

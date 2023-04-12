@@ -1,0 +1,237 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "TestCases.test_device",
+    "children" : [ {
+      "name" : "test_insert_device",
+      "children" : [ {
+        "name" : "TestInsertDevice",
+        "children" : [ {
+          "name" : "正常新增",
+          "uid" : "9c7b4dd0567ac240",
+          "parentUid" : "7cfd9a9a5d14b094c2b640535231dc61",
+          "status" : "passed",
+          "time" : {
+            "start" : 1625794695546,
+            "stop" : 1625794695766,
+            "duration" : 220
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'name': '正常新增', 'method': 'post', 'datas': {'deviceCode': '3422011', 'deviceName': '测试数据', 'deviceTypes': ['03', '0301', '0301001'], 'functionalCode': '0101001', 'largeType': '03', 'lineCode': '01', 'lineStationRoom': ['01', '001', '00101'], 'midType': '0301', 'locationCode': '0100100101005', 'protectionFlag': '0', 'roomCode': '00101', 'smallTypeCode': '0301001', 'stationCode': '001', 'status': '0'}, 'except': {'msg': '保存成功'}, 'check_sql': {'before_sql': 'select max(id) from i_device_info', 'after_sql': 'select max(id) from i_device_info'}}" ]
+        }, {
+          "name" : "不输入设备编码",
+          "uid" : "5c38281a458e9d6f",
+          "parentUid" : "7cfd9a9a5d14b094c2b640535231dc61",
+          "status" : "passed",
+          "time" : {
+            "start" : 1625794695770,
+            "stop" : 1625794695808,
+            "duration" : 38
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'name': '不输入设备编码', 'method': 'post', 'datas': {'deviceCode': ' ', 'deviceName': '测试数据', 'deviceTypes': ['03', '0301', '0301001'], 'functionalCode': '0101001', 'largeType': '03', 'lineCode': '01', 'lineStationRoom': ['01', '001', '00101'], 'midType': '0301', 'locationCode': '0100100101005', 'protectionFlag': '0', 'roomCode': '00101', 'smallTypeCode': '0301001', 'stationCode': '001', 'status': '0'}, 'except': {'msg': '设备编码不能为空'}, 'check_sql': {'before_sql': None, 'after_sql': 'select max(id) from i_device_info'}}" ]
+        } ],
+        "uid" : "7cfd9a9a5d14b094c2b640535231dc61"
+      } ],
+      "uid" : "afab98fbbec0bf5e8f1599c8c68e0081"
+    } ],
+    "uid" : "e620fbf013a120b6caffa18753dccc80"
+  }, {
+    "name" : "TestCases.test_login",
+    "children" : [ {
+      "name" : "test_login",
+      "children" : [ {
+        "name" : "TestLogin",
+        "children" : [ {
+          "name" : "正常登录",
+          "uid" : "68c310e9ac3dcbed",
+          "parentUid" : "f88cc2589c2f300574e2c70b953ba0d7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1625794695814,
+            "stop" : 1625794695999,
+            "duration" : 185
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'name': '正常登录', 'requests': {'method': 'get', 'headers': {'Authorization': 'Basic aW9tczppb21z'}, 'data': {'username': 'admin', 'password': '7G8EqAsTPjxcn4Mmn7LSpQ==', 'grant_type': 'password'}}, 'except': {'username': 'admin', 'msg': ''}}" ]
+        }, {
+          "name" : "不输入密码",
+          "uid" : "f4c6d649d5bc354b",
+          "parentUid" : "f88cc2589c2f300574e2c70b953ba0d7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1625794696003,
+            "stop" : 1625794696078,
+            "duration" : 75
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'name': '不输入密码', 'requests': {'method': 'get', 'headers': {'Authorization': 'Basic aW9tczppb21z'}, 'data': {'username': 'admin', 'password': None, 'grant_type': 'password'}}, 'except': {'username': None, 'msg': 'Bad credentials'}}" ]
+        }, {
+          "name" : "不输入用户名",
+          "uid" : "e0836c0c16085e2f",
+          "parentUid" : "f88cc2589c2f300574e2c70b953ba0d7",
+          "status" : "passed",
+          "time" : {
+            "start" : 1625794696082,
+            "stop" : 1625794696308,
+            "duration" : 226
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'name': '不输入用户名', 'requests': {'method': 'get', 'headers': {'Authorization': 'Basic aW9tczppb21z'}, 'data': {'username': None, 'password': '7G8EqAsTPjxcn4Mmn7LSpQ==', 'grant_type': 'password'}}, 'except': {'username': None, 'msg': 'Bad credentials'}}" ]
+        } ],
+        "uid" : "f88cc2589c2f300574e2c70b953ba0d7"
+      } ],
+      "uid" : "9fd80f1844793c94823745acb75e107e"
+    } ],
+    "uid" : "8a22eafe7725c0a18e0d24ada5c8b905"
+  }, {
+    "name" : "TestCases.test_menu",
+    "children" : [ {
+      "name" : "test_menu",
+      "children" : [ {
+        "name" : "TestMenu",
+        "children" : [ {
+          "name" : "test_menu",
+          "uid" : "bd907f18ca5ca265",
+          "parentUid" : "ef19a79cebc8580072d359af311e12d3",
+          "status" : "passed",
+          "time" : {
+            "start" : 1625794696511,
+            "stop" : 1625794696566,
+            "duration" : 55
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ ]
+        } ],
+        "uid" : "ef19a79cebc8580072d359af311e12d3"
+      } ],
+      "uid" : "0049e0b594d64d90c2f833f061ea13e6"
+    } ],
+    "uid" : "ccaf49d3bc5674b1c94a16eecd241b58"
+  }, {
+    "name" : "TestCases.test_point",
+    "children" : [ {
+      "name" : "test_01_search_point",
+      "children" : [ {
+        "name" : "TestPoint",
+        "children" : [ {
+          "name" : "查询房间数据",
+          "uid" : "8dc3dcb83175b004",
+          "parentUid" : "da0cc1e89c387edc64a866193855fc75",
+          "status" : "passed",
+          "time" : {
+            "start" : 1625794696734,
+            "stop" : 1625794696812,
+            "duration" : 78
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'name': '查询房间数据', 'method': 'get', 'data': {'size': '10000000', 'current': '1', 'lineCode': '01', 'stationCode': '001', 'roomCode': '00101'}}" ]
+        } ],
+        "uid" : "da0cc1e89c387edc64a866193855fc75"
+      } ],
+      "uid" : "a09aed413c8423f381bb75a1fa342fe7"
+    }, {
+      "name" : "test_02_insert_point",
+      "children" : [ {
+        "name" : "TestInsertPoint",
+        "children" : [ {
+          "name" : "正常新增数据",
+          "uid" : "ff8afc615aa558d",
+          "parentUid" : "ab0a9e9f394902329a47cc18a508c173",
+          "status" : "passed",
+          "time" : {
+            "start" : 1625794696972,
+            "stop" : 1625794697097,
+            "duration" : 125
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'name': '正常新增数据', 'method': 'post', 'data': {'code': None, 'deviceCode': 30022201001030301030100100003, 'enableStatus': 0, 'id': 46, 'infoCode': None, 'lineCode': '01', 'partCode': None, 'pcode': None, 'pointCode': 4732028992712414856706, 'pointName': '测试数据', 'pointType': 1, 'roomCode': '00101', 'stationCode': '001', 'useTo': 0}, 'except': {'msg': '保存成功'}}" ]
+        }, {
+          "name" : "新增重复数据",
+          "uid" : "994629ee95836f8e",
+          "parentUid" : "ab0a9e9f394902329a47cc18a508c173",
+          "status" : "passed",
+          "time" : {
+            "start" : 1625794697102,
+            "stop" : 1625794697195,
+            "duration" : 93
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'name': '新增重复数据', 'method': 'post', 'data': {'code': None, 'deviceCode': 30022201001030301030100100003, 'enableStatus': 0, 'id': None, 'infoCode': None, 'lineCode': '01', 'partCode': None, 'pcode': None, 'pointCode': 4732028992712414856706, 'pointName': '测试数据', 'pointType': 1, 'roomCode': '00101', 'stationCode': '001', 'useTo': 0}, 'except': {'msg': '同一个房间中存在名称重复的点位'}}" ]
+        } ],
+        "uid" : "ab0a9e9f394902329a47cc18a508c173"
+      } ],
+      "uid" : "5128e99e255e114d3e48392752e90db6"
+    }, {
+      "name" : "test_03_delete_point",
+      "children" : [ {
+        "name" : "TestDeletePoint",
+        "children" : [ {
+          "name" : "删除点位成功",
+          "uid" : "7fdef63184e1071",
+          "parentUid" : "4b0e5cd8ecce85e12a0ba1559853caac",
+          "status" : "passed",
+          "time" : {
+            "start" : 1625794697371,
+            "stop" : 1625794697447,
+            "duration" : 76
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'data': {'ids': 21572}}" ]
+        } ],
+        "uid" : "4b0e5cd8ecce85e12a0ba1559853caac"
+      } ],
+      "uid" : "37e23c4dc28b72ca72c709b0e3ccb9d1"
+    } ],
+    "uid" : "1a27f3735fd856a20b7a69799f61f4f5"
+  }, {
+    "name" : "TestCases.test_upload",
+    "children" : [ {
+      "name" : "test_upload",
+      "children" : [ {
+        "name" : "TestUpload",
+        "children" : [ {
+          "name" : "正常上传图片",
+          "uid" : "18c0bb03aee9c4e7",
+          "parentUid" : "373b667d2a5021753f4651dc13ca4e87",
+          "status" : "passed",
+          "time" : {
+            "start" : 1625794697612,
+            "stop" : 1625794697760,
+            "duration" : 148
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'name': '正常上传图片', 'request': {'data': {'file': 'open(r\"E:\\\\cqc\\\\apache-jmeter-5.1.1\\\\csv\\\\123.png\",\\'rb\\')'}}, 'except': {'msg': '上传成功！'}}" ]
+        }, {
+          "name" : "正常上传文件",
+          "uid" : "a66d2bf7c60d8e11",
+          "parentUid" : "373b667d2a5021753f4651dc13ca4e87",
+          "status" : "passed",
+          "time" : {
+            "start" : 1625794697764,
+            "stop" : 1625794697919,
+            "duration" : 155
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "{'name': '正常上传文件', 'request': {'data': {'file': 'open(r\"E:\\\\cqc\\\\apache-jmeter-5.1.1\\\\csv\\\\advanced.docx\",\\'rb\\')'}}, 'except': {'msg': '上传成功！'}}" ]
+        } ],
+        "uid" : "373b667d2a5021753f4651dc13ca4e87"
+      } ],
+      "uid" : "8975448aed317bd7a814ac7ca1c5885f"
+    } ],
+    "uid" : "ffc617952005939a53f55bcfc8004d04"
+  } ]
+}

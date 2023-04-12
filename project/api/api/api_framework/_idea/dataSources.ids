@@ -1,0 +1,4397 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - ioms-scada@192.168.6.96" uuid="e4b2a553-d25f-476c-ae79-499395cd8107">
+    <database-info product="MySQL" version="8.0.25" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.47 ( Revision: fe1903b1ecb4a96a917f7ed3190d80c049b1de29 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.4">
+      <schema id="1" name="ioms-scada"/>
+      <table id="2" parent="1" name="i_alarm_remote_view_gauge"/>
+      <table id="3" parent="1" name="i_alarm_remote_view_status"/>
+      <table id="4" parent="1" name="i_camera_info">
+        <comment>相机信息表</comment>
+      </table>
+      <table id="5" parent="1" name="i_device_classification">
+        <comment>设备分类&#xd;
+</comment>
+      </table>
+      <table id="6" parent="1" name="i_device_code_config">
+        <comment>设备码值表</comment>
+      </table>
+      <table id="7" parent="1" name="i_device_command">
+        <comment>设备控制指令表</comment>
+      </table>
+      <table id="8" parent="1" name="i_device_dept">
+        <comment>对设备维护的各个部门</comment>
+      </table>
+      <table id="9" parent="1" name="i_device_file">
+        <comment>设备和部件的附件表</comment>
+      </table>
+      <table id="10" parent="1" name="i_device_functional_types">
+        <comment>功能类型</comment>
+      </table>
+      <table id="11" parent="1" name="i_device_image">
+        <comment>设备图片表</comment>
+      </table>
+      <table id="12" parent="1" name="i_device_info">
+        <comment>设备基础信息表</comment>
+      </table>
+      <table id="13" parent="1" name="i_device_location">
+        <comment>设备位置表</comment>
+      </table>
+      <table id="14" parent="1" name="i_device_maintenance">
+        <comment>设备和部件维保表</comment>
+      </table>
+      <table id="15" parent="1" name="i_device_part">
+        <comment>设备部件表</comment>
+      </table>
+      <table id="16" parent="1" name="i_device_repair">
+        <comment>维保信息为记录设备维护保养的关键信息i_device_repair</comment>
+      </table>
+      <table id="17" parent="1" name="i_device_small_type">
+        <comment>设备小类</comment>
+      </table>
+      <table id="18" parent="1" name="i_dis_drawer">
+        <comment>配电抽屉信息（属于机柜下的一层物理层模型，便于3D展示）</comment>
+      </table>
+      <table id="19" parent="1" name="i_electric">
+        <comment>电度数据标准，根据同功能类型、品牌、型号、规格的设备数据设定信息采集标准，使监测数据使用可分析、可积累处理，并作为数据分析</comment>
+      </table>
+      <table id="20" parent="1" name="i_environment_point_config">
+        <comment>环境点位信息配置表</comment>
+      </table>
+      <table id="21" parent="1" name="i_fastdfs_file"/>
+      <table id="22" parent="1" name="i_inspection_point_ref">
+        <comment>i_inspection_point_ref（巡检设备与巡检点的对应关系表）</comment>
+      </table>
+      <table id="23" parent="1" name="i_line_info">
+        <comment>线路基础属性</comment>
+      </table>
+      <table id="24" parent="1" name="i_line_segment">
+        <comment>线段表信息,两线之间的概念，方便后面拓展</comment>
+      </table>
+      <table id="25" parent="1" name="i_map_edge">
+        <comment>地铁线段边属性</comment>
+      </table>
+      <table id="26" parent="1" name="i_map_line">
+        <comment>地铁地图线路表</comment>
+      </table>
+      <table id="27" parent="1" name="i_map_point">
+        <comment>地铁地图站点</comment>
+      </table>
+      <table id="28" parent="1" name="i_minio_file">
+        <comment>文件表</comment>
+      </table>
+      <table id="29" parent="1" name="i_point_info">
+        <comment>系统点位表</comment>
+      </table>
+      <table id="30" parent="1" name="i_point_property_addition">
+        <comment>属性值</comment>
+      </table>
+      <table id="31" parent="1" name="i_point_type_property">
+        <comment>点位属性配置</comment>
+      </table>
+      <table id="32" parent="1" name="i_point_type_value">
+        <comment>点位类型值对应表</comment>
+      </table>
+      <table id="33" parent="1" name="i_project_city">
+        <comment>项目城市</comment>
+      </table>
+      <table id="34" parent="1" name="i_quartz_job">
+        <comment>定时任务表</comment>
+      </table>
+      <table id="35" parent="1" name="i_register_user">
+        <comment>注册对接的厂家</comment>
+      </table>
+      <table id="36" parent="1" name="i_remote_signal">
+        <comment>遥信数据标准--监测数据根据同功能类型、品牌、型号、规格的设备数据设定信息采集标准，使监测数据使用可分析、可积累处理，并</comment>
+      </table>
+      <table id="37" parent="1" name="i_remote_telemetry">
+        <comment>监测数据根据同功能类型、品牌、型号、规格的设备数据设定信息采集标准，使监测数据使用可分析、可积累处理，并作为数据分析的基</comment>
+      </table>
+      <table id="38" parent="1" name="i_remote_viewing">
+        <comment>遥视数据标准根据同功能类型、品牌、型号、规格的设备数据设定信息采集标准，使监测数据使用可分析、可积累处理，并作为数据分析</comment>
+      </table>
+      <table id="39" parent="1" name="i_robot_info">
+        <comment>机器人管理表</comment>
+      </table>
+      <table id="40" parent="1" name="i_room_info">
+        <comment>房间基础信息</comment>
+      </table>
+      <table id="41" parent="1" name="i_sensor_info">
+        <comment>机器人传感器故障报警（后期维护）</comment>
+      </table>
+      <table id="42" parent="1" name="i_station_info">
+        <comment>站所基础信息，包括站室地理位置</comment>
+      </table>
+      <table id="43" parent="1" name="i_threshold_limit">
+        <comment>设定阈值表</comment>
+      </table>
+      <table id="44" parent="1" name="i_video_device_manager"/>
+      <table id="45" parent="1" name="rc_health">
+        <comment>健康度</comment>
+      </table>
+      <table id="46" parent="1" name="rc_location_point_type">
+        <comment>设备类型点位类型</comment>
+      </table>
+      <table id="47" parent="1" name="rc_plan">
+        <comment>rc_plan计划表</comment>
+      </table>
+      <table id="48" parent="1" name="rc_plan_item">
+        <comment>rc_plan_item计划明细表</comment>
+      </table>
+      <table id="49" parent="1" name="rc_special_task">
+        <comment>特巡任务</comment>
+      </table>
+      <table id="50" parent="1" name="rc_task">
+        <comment>任务巡检记录===plan_task执行完后才会去写一条，与plan_task一一对应</comment>
+      </table>
+      <table id="51" parent="1" name="rc_task_item">
+        <comment>任务数据明细---任务执行过程中的实时表【批量插入，mq更新状态】</comment>
+      </table>
+      <table id="52" parent="1" name="rc_task_result_current">
+        <comment>巡检点位最新结果表</comment>
+      </table>
+      <table id="53" parent="1" name="sys_dept">
+        <comment>部门管理</comment>
+      </table>
+      <table id="54" parent="1" name="sys_dept_relation">
+        <comment>部门关系表</comment>
+      </table>
+      <table id="55" parent="1" name="sys_dict">
+        <comment>系统字典表</comment>
+      </table>
+      <table id="56" parent="1" name="sys_log">
+        <comment>日志表</comment>
+      </table>
+      <table id="57" parent="1" name="sys_menu">
+        <comment>菜单权限表</comment>
+      </table>
+      <table id="58" parent="1" name="sys_oauth_client_details">
+        <comment>终端信息表</comment>
+      </table>
+      <table id="59" parent="1" name="sys_role">
+        <comment>系统角色表</comment>
+      </table>
+      <table id="60" parent="1" name="sys_role_menu">
+        <comment>角色菜单表</comment>
+      </table>
+      <table id="61" parent="1" name="sys_role_permissions"/>
+      <table id="62" parent="1" name="sys_route_conf">
+        <comment>路由配置表</comment>
+      </table>
+      <table id="63" parent="1" name="sys_user">
+        <comment>用户表</comment>
+      </table>
+      <table id="64" parent="1" name="sys_user_role">
+        <comment>用户角色表</comment>
+      </table>
+      <table id="65" parent="1" name="xxl_job_group"/>
+      <table id="66" parent="1" name="xxl_job_info"/>
+      <table id="67" parent="1" name="xxl_job_lock"/>
+      <table id="68" parent="1" name="xxl_job_log"/>
+      <table id="69" parent="1" name="xxl_job_log_report"/>
+      <table id="70" parent="1" name="xxl_job_logglue"/>
+      <table id="71" parent="1" name="xxl_job_registry"/>
+      <table id="72" parent="1" name="xxl_job_user"/>
+      <column id="73" parent="2" name="id">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="74" parent="2" name="point_code">
+        <comment>点位编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="75" parent="2" name="warn_upper_limit">
+        <comment>预警上限</comment>
+        <data-type>float(6,2)</data-type>
+        <default-expression>&apos;0.00&apos;</default-expression>
+      </column>
+      <column id="76" parent="2" name="warn_upper_enable">
+        <comment>预警上限是否使能,0–非使能 1–等于 2–不等于 3–大于 4–小于</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="77" parent="2" name="warn_lower_limit">
+        <comment>预警下限</comment>
+        <data-type>float(6,2)</data-type>
+        <default-expression>&apos;0.00&apos;</default-expression>
+      </column>
+      <column id="78" parent="2" name="warn_lower_enable">
+        <comment>预警下限是否使能,0–非使能 1–等于 2–不等于 3–大于 4–小于</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="79" parent="2" name="common_upper_limit">
+        <comment>一般报警上限</comment>
+        <data-type>float(6,2)</data-type>
+        <default-expression>&apos;0.00&apos;</default-expression>
+      </column>
+      <column id="80" parent="2" name="common_upper_enable">
+        <comment>一般报警上限是否使能,0–非使能 1–等于 2–不等于 3–大于 4–小于</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="81" parent="2" name="common_lower_limit">
+        <comment>一般报警下限</comment>
+        <data-type>float(6,2)</data-type>
+        <default-expression>&apos;0.00&apos;</default-expression>
+      </column>
+      <column id="82" parent="2" name="common_lower_enable">
+        <comment>一般报警下限是否使能,0–非使能 1–等于 2–不等于 3–大于 4–小于</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="83" parent="2" name="serious_upper_limit">
+        <comment>严重报警上限</comment>
+        <data-type>float(6,2)</data-type>
+        <default-expression>&apos;0.00&apos;</default-expression>
+      </column>
+      <column id="84" parent="2" name="serious_upper_enable">
+        <comment>严重告警是否使能,0–非使能 1–等于 2–不等于 3–大于 4–小于</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="85" parent="2" name="serious_lower_limit">
+        <comment>严重报警下限</comment>
+        <data-type>float(6,2)</data-type>
+        <default-expression>&apos;0.00&apos;</default-expression>
+      </column>
+      <column id="86" parent="2" name="serious_lower_enable">
+        <comment>严重报警下限是否使能,0–非使能 1–等于 2–不等于 3–大于 4–小于</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="87" parent="2" name="critical_upper_limit">
+        <comment>危急报警上限</comment>
+        <data-type>float(6,2)</data-type>
+        <default-expression>&apos;0.00&apos;</default-expression>
+      </column>
+      <column id="88" parent="2" name="critical_upper_enable">
+        <comment>危急报警上限是否使能,0–非使能 1–等于 2–不等于 3–大于 4–小于</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="89" parent="2" name="critical_lower_limit">
+        <comment>危急报警下限</comment>
+        <data-type>float(6,2)</data-type>
+        <default-expression>&apos;0.00&apos;</default-expression>
+      </column>
+      <column id="90" parent="2" name="critical_lower_enable">
+        <comment>危急报警下限是否使能,0–非使能 1–等于 2–不等于 3–大于 4–小于</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="91" parent="2" name="create_time">
+        <comment>创建时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="92" parent="2" name="update_time">
+        <comment>修改时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="93" parent="2" name="delete_flag">
+        <comment>删除标记</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="94" parent="2" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="95" parent="3" name="id">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="96" parent="3" name="point_code">
+        <comment>点位编码</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="97" parent="3" name="warn_alarm_val">
+        <comment>预警告警值</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="98" parent="3" name="warn_alarm_enable">
+        <comment>预警告警是否使能,0–非使能 1–等于 2–不等于 3–大于 4–小于</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="99" parent="3" name="common_alarm_val">
+        <comment>一般告警值</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="100" parent="3" name="common_alarm_enable">
+        <comment>一般告警是否使能,0–非使能 1–等于 2–不等于 3–大于 4–小于</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="101" parent="3" name="serious_alarm_val">
+        <comment>严重告警值</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="102" parent="3" name="serious_alarm_enable">
+        <comment>严重告警是否使能,0–非使能 1–等于 2–不等于 3–大于 4–小于</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="103" parent="3" name="critical_alarm_val">
+        <comment>危急告警值</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="104" parent="3" name="critical_alarm_enable">
+        <comment>危急告警是否使能,0–非使能 1–等于 2–不等于 3–大于 4–小于</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="105" parent="3" name="create_time">
+        <comment>创建时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="106" parent="3" name="update_time">
+        <comment>修改时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="107" parent="3" name="delete_flag">
+        <comment>删除标记</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="108" parent="3" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="109" parent="4" name="id">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="110" parent="4" name="camera_code">
+        <comment>设备编码（对应i_device_info表中的编码device_code）</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="111" parent="4" name="camera_name">
+        <comment>相机名称（即设备名称）</comment>
+        <data-type>varchar(120)</data-type>
+      </column>
+      <column id="112" parent="4" name="is_belong">
+        <comment>是否为机器人(1：机器人、2：巡检相机、3、辅控相机、4：CCTV、5：可视化接地、6：电子围栏、7....)</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="113" parent="4" name="belong_code">
+        <comment>机器人编码（当摄像头为机器人相机时）</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="114" parent="4" name="factory">
+        <comment>厂商</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="115" parent="4" name="brand">
+        <comment>品牌</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="116" parent="4" name="model">
+        <comment>型号</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="117" parent="4" name="camera_control">
+        <comment>控制组件（海康、大华等控制方式）</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="118" parent="4" name="camera_type">
+        <comment>相机识别类型（0：可见光、1：红外、2：双目相机）</comment>
+        <data-type>tinyint</data-type>
+      </column>
+      <column id="119" parent="4" name="username">
+        <comment>用户名</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="120" parent="4" name="password">
+        <comment>密码</comment>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="121" parent="4" name="camera_ip">
+        <comment>相机IP</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="122" parent="4" name="camera_port">
+        <comment>设备端口</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="123" parent="4" name="room_code">
+        <comment>房间编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="124" parent="4" name="station_code">
+        <comment>站室编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="125" parent="4" name="all_code">
+        <comment>全路径编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="126" parent="4" name="rtsp_url">
+        <comment>RTSP流地址</comment>
+        <data-type>varchar(150)</data-type>
+      </column>
+      <column id="127" parent="4" name="hls_url">
+        <comment>HLS流地址</comment>
+        <data-type>varchar(150)</data-type>
+      </column>
+      <column id="128" parent="4" name="rtmp_url">
+        <comment>RTMP流地址</comment>
+        <data-type>varchar(150)</data-type>
+      </column>
+      <column id="129" parent="4" name="web_port">
+        <comment>网络端口</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="130" parent="4" name="sdk_port">
+        <comment>sdk端口</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="131" parent="4" name="ip_mapping">
+        <comment>ip映射</comment>
+        <data-type>varchar(150)</data-type>
+      </column>
+      <column id="132" parent="4" name="port_mapping">
+        <comment>端口映射</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="133" parent="4" name="sdk_port_mapping">
+        <comment>rtsp端口映射</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="134" parent="4" name="channel_number">
+        <comment>相机通道号</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="135" parent="4" name="create_time">
+        <comment>创建时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="136" parent="4" name="update_time">
+        <comment>修改时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="137" parent="4" name="delete_flag">
+        <comment>删除标记</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="138" parent="4" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="139" parent="5" name="id">
+        <comment>编号</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="140" parent="5" name="code">
+        <comment>代码</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="141" parent="5" name="name">
+        <comment>名称</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="142" parent="5" name="remarks">
+        <comment>描述</comment>
+        <data-type>varchar(500)</data-type>
+      </column>
+      <column id="143" parent="5" name="status">
+        <comment>状态(0:禁用,1:启用)</comment>
+        <data-type>int</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="144" parent="5" name="create_time">
+        <comment>创建日期 默认为当前时间</comment>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="145" parent="5" name="update_time">
+        <comment>更新时间</comment>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="146" parent="5" name="delete_flag">
+        <comment>删除标记</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="147" parent="5" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="148" parent="6" name="id">
+        <comment>编号</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="149" parent="6" name="type">
+        <comment>代码</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="150" parent="6" name="name">
+        <comment>名称</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="151" parent="6" name="code">
+        <comment>码值</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="152" parent="6" name="pcode">
+        <comment>父编码</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="153" parent="6" name="ptype">
+        <comment>父类型</comment>
+        <data-type>int</data-type>
+      </column>
+      <column id="154" parent="6" name="identify_type">
+        <comment>识别类型，1-温度识别，2-外观识别，3-噪声识别，4-表计识别，5-表位识别。仅当type为17（点位类型）时有效。</comment>
+        <data-type>int</data-type>
+      </column>
+      <column id="155" parent="6" name="sort">
+        <comment>排序</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="156" parent="6" name="value_type">
+        <comment>值类型，当type为17时，0：状态量  1：测量量</comment>
+        <data-type>tinyint</data-type>
+      </column>
+      <column id="157" parent="6" name="status">
+        <comment>状态(0:禁用,1:启用)</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="158" parent="6" name="remark">
+        <comment>类型描述</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="159" parent="6" name="create_time">
+        <comment>创建日期 默认为当前时间</comment>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="160" parent="6" name="update_time">
+        <comment>更新时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="161" parent="6" name="delete_flag">
+        <comment>删除标记</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="162" parent="6" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="163" parent="7" name="id">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="164" parent="7" name="code">
+        <comment>指令编码</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="165" parent="7" name="name">
+        <comment>指令名称</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="166" parent="7" name="type">
+        <comment>设备类型，1：机器人 2：相机</comment>
+        <data-type>int</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="167" parent="7" name="sign">
+        <comment>指令标记</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="168" parent="7" name="model">
+        <comment>设备型号</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="169" parent="7" name="remark">
+        <comment>备注</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="170" parent="7" name="create_time">
+        <comment>创建时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="171" parent="7" name="update_time">
+        <comment>更新时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="172" parent="7" name="delete_flag">
+        <comment>删除标记</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="173" parent="7" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="174" parent="8" name="id">
+        <comment>编号</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="175" parent="8" name="device_code">
+        <comment>设备编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="176" parent="8" name="management_dept_no">
+        <comment>管理部门</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="177" parent="8" name="supervise_dept_no">
+        <comment>监管部门</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="178" parent="8" name="inspection_dept_no">
+        <comment>巡检部门</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="179" parent="8" name="maintain_dept_no">
+        <comment>维护部门</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="180" parent="8" name="overhaul_dept_no">
+        <comment>检修部门</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="181" parent="8" name="test_dept_no">
+        <comment>试验部门</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="182" parent="8" name="create_time">
+        <comment>创建时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="183" parent="8" name="update_time">
+        <comment>更新时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="184" parent="8" name="delete_flag">
+        <comment>删除标记</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="185" parent="8" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="186" parent="9" name="id">
+        <comment>主键ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="187" parent="9" name="code">
+        <comment>编码（设备编码|部件编码）</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="188" parent="9" name="device_class">
+        <comment>类型（1-机柜 2-部件）</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="189" parent="9" name="file_type">
+        <comment>文件类型（1-静态图片 2-3D效果图 3-设备附件 4......）</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="190" parent="9" name="file_name">
+        <comment>文件名称</comment>
+        <data-type>varchar(120)</data-type>
+      </column>
+      <column id="191" parent="9" name="url">
+        <comment>文件上传地址</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="192" parent="9" name="file_extension">
+        <comment>文件后缀名</comment>
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="193" parent="9" name="bucket_name">
+        <comment>存储桶</comment>
+        <data-type>varchar(63)</data-type>
+      </column>
+      <column id="194" parent="9" name="create_time">
+        <comment>创建时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="195" parent="9" name="update_time">
+        <comment>更新时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="196" parent="9" name="delete_flag">
+        <comment>删除标记（0-未删除 1-已删除）</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="197" parent="9" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="198" parent="10" name="id">
+        <comment>主键ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="199" parent="10" name="code">
+        <comment>功能类型代码</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="200" parent="10" name="name">
+        <comment>功能类型</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="201" parent="10" name="category_code">
+        <comment>设备类别编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="202" parent="10" name="class_code">
+        <comment>设备分类编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="203" parent="10" name="remarks">
+        <comment>描述</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="204" parent="10" name="create_time">
+        <comment>创建时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="205" parent="10" name="update_time">
+        <comment>更新时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="206" parent="10" name="delete_flag">
+        <comment>删除标记</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="207" parent="10" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="208" parent="11" name="id">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="209" parent="11" name="device_code">
+        <comment>设备编码</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="210" parent="11" name="type">
+        <comment>图片类型、1：静态png/jpg、2：3D效果图</comment>
+        <data-type>tinyint</data-type>
+      </column>
+      <column id="211" parent="11" name="name">
+        <comment>图片名称命名规则：品牌+“-”+型号+“-”+规格+“-”+名称</comment>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="212" parent="11" name="url">
+        <comment>图片url</comment>
+        <data-type>varchar(120)</data-type>
+      </column>
+      <column id="213" parent="11" name="create_time">
+        <comment>创建时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="214" parent="11" name="update_time">
+        <comment>更新时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="215" parent="11" name="delete_flag">
+        <comment>删除标记</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="216" parent="11" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="217" parent="12" name="id">
+        <comment>主键id</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="218" parent="12" name="device_code">
+        <comment>设备编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="219" parent="12" name="device_name">
+        <comment>设备名称，如：35kV诸虹Ⅰ进线开关柜，以设计上的铭牌为准</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="220" parent="12" name="dispatch_code">
+        <comment>调度号</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="221" parent="12" name="small_type_code">
+        <comment>设备小类编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="222" parent="12" name="important_level">
+        <comment>重要程度、重要设备3/瓶颈设备2/普通设备1</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="223" parent="12" name="abc_type">
+        <comment>ABC分类</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="224" parent="12" name="device_grade">
+        <comment>设备评级</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="225" parent="12" name="functional_code">
+        <comment>功能类型</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="226" parent="12" name="location_zone">
+        <comment>所在段、以实际位置为准，无分段/Ⅰ段/Ⅱ段</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="227" parent="12" name="location_code">
+        <comment>位置编码</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="228" parent="12" name="location_desc">
+        <comment>设备位置描述</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="229" parent="12" name="room_code">
+        <comment>房间编码</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="230" parent="12" name="nameplate_no">
+        <comment>设备铭牌，如：H11，以设计图纸为准</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="231" parent="12" name="manufacturer">
+        <comment>制造商、以实际制造单位营业执照上的公司名称为准</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="232" parent="12" name="brand">
+        <comment>品牌、以实际品牌为准</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="233" parent="12" name="specification">
+        <comment>规格、以厂商的规格数据为准</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="234" parent="12" name="model">
+        <comment>型号、以厂商定义的型号为准</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="235" parent="12" name="supplier">
+        <comment>供应商、实际供货单位，以营业执照上的名称为准</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="236" parent="12" name="assemble_company">
+        <comment>集成商（设备部件集成公司）</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="237" parent="12" name="device_type">
+        <comment>设备类型（1-机柜 2-机器人 3-相机 4...）</comment>
+        <data-type>char(2)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="238" parent="12" name="status">
+        <comment>设备状态（0-在用 1-停用 2-报废）</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="239" parent="12" name="gis_flag">
+        <comment>GIS标识</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="240" parent="12" name="protection_flag">
+        <comment>综保标识（0-否 1-是）</comment>
+        <data-type>tinyint</data-type>
+      </column>
+      <column id="241" parent="12" name="create_time">
+        <comment>创建时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="242" parent="12" name="update_time">
+        <comment>修改时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="243" parent="12" name="delete_flag">
+        <comment>删除标记（0未删除，1已删除）</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="244" parent="12" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="245" parent="13" name="id">
+        <comment>主键id</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="246" parent="13" name="device_code">
+        <comment>设备编码</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="247" parent="13" name="logical_position">
+        <comment>逻辑位置信息、南京南站牵引变电站35kv系统</comment>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="248" parent="13" name="physical_position">
+        <comment>物理位置信息、设备实际所在的物理位置，如：35kV诸虹Ⅰ进线开关柜</comment>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="249" parent="13" name="gis_sign">
+        <comment>预留GIS信息</comment>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="250" parent="13" name="create_time">
+        <comment>创建时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="251" parent="13" name="update_time">
+        <comment>更新时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="252" parent="13" name="delete_flag">
+        <comment>删除标记</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="253" parent="13" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="254" parent="14" name="id">
+        <comment>主键ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="255" parent="14" name="code">
+        <comment>设备编码|部件编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="256" parent="14" name="device_class">
+        <comment>维保设备类型（1-设备  2-部件）</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="257" parent="14" name="manufacture_date">
+        <comment>出厂日期</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="258" parent="14" name="start_date">
+        <comment>启用日期（对应部件：受电日期）</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="259" parent="14" name="arrival_date">
+        <comment>到货日期</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="260" parent="14" name="handover_date">
+        <comment>移交日期</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="261" parent="14" name="manage_department_code">
+        <comment>管理部门</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="262" parent="14" name="maintenance_department_code">
+        <comment>维护部门</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="263" parent="14" name="repair_department_code">
+        <comment>检修部门</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="264" parent="14" name="expect_useful_time">
+        <comment>预计可用时间（年）</comment>
+        <data-type>double</data-type>
+      </column>
+      <column id="265" parent="14" name="expiration_date">
+        <comment>使用寿命到期日期</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="266" parent="14" name="plan_expiration_date">
+        <comment>设计寿命到期日期</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="267" parent="14" name="repair_period">
+        <comment>维护周期（年）</comment>
+        <data-type>double</data-type>
+      </column>
+      <column id="268" parent="14" name="warranty_expired_date">
+        <comment>质保到期日期</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="269" parent="14" name="expect_overhaul_date">
+        <comment>预计大修日期</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="270" parent="14" name="expect_replace_date">
+        <comment>预计更换日期</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="271" parent="14" name="rated_current">
+        <comment>额定电流</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="272" parent="14" name="rated_voltage">
+        <comment>额定电压</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="273" parent="14" name="maximum_withstand_current">
+        <comment>最大耐受电流</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="274" parent="14" name="tolerance_temperature">
+        <comment>环境温度</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="275" parent="14" name="international_standard">
+        <comment>国际标准</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="276" parent="14" name="udf_standard">
+        <comment>UDF标准</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="277" parent="14" name="utf_standard">
+        <comment>UTF标准</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="278" parent="14" name="wide">
+        <comment>宽（mm）</comment>
+        <data-type>double</data-type>
+      </column>
+      <column id="279" parent="14" name="high">
+        <comment>高（mm）</comment>
+        <data-type>double</data-type>
+      </column>
+      <column id="280" parent="14" name="length">
+        <comment>长（mm）</comment>
+        <data-type>double</data-type>
+      </column>
+      <column id="281" parent="14" name="create_time">
+        <comment>创建时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="282" parent="14" name="update_time">
+        <comment>更新时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="283" parent="14" name="delete_flag">
+        <comment>删除标记(0-未删除 1-已删除)</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="284" parent="14" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="285" parent="15" name="id">
+        <comment>主键ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="286" parent="15" name="part_code">
+        <comment>部件编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="287" parent="15" name="device_code">
+        <comment>所属设备编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="288" parent="15" name="part_name">
+        <comment>部件名称</comment>
+        <data-type>varchar(120)</data-type>
+      </column>
+      <column id="289" parent="15" name="manufacturer">
+        <comment>制造商</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="290" parent="15" name="supplier">
+        <comment>供应商</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="291" parent="15" name="brand">
+        <comment>品牌</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="292" parent="15" name="nameplate">
+        <comment>铭牌</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="293" parent="15" name="model">
+        <comment>型号</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="294" parent="15" name="specification">
+        <comment>规格</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="295" parent="15" name="important_level">
+        <comment>重要程度</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="296" parent="15" name="part_number">
+        <comment>元器件编号</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="297" parent="15" name="status">
+        <comment>部件状态（0-在用 1-停用 2-报废）</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="298" parent="15" name="location_desc">
+        <comment>位置描述</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="299" parent="15" name="create_time">
+        <comment>创建时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="300" parent="15" name="update_time">
+        <comment>更新时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="301" parent="15" name="delete_flag">
+        <comment>删除标记（0-未删除 1-已删除）</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="302" parent="15" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="303" parent="16" name="id">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="304" parent="16" name="device_code">
+        <comment>设备编码</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="305" parent="16" name="maintenance_cycle">
+        <comment>记录设备的维护周期（天）</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="306" parent="16" name="warranty_period">
+        <comment>质保期</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="307" parent="16" name="service_life">
+        <comment>记录设备设计的使用寿命</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="308" parent="16" name="overhaul_years">
+        <comment>大修年限、记录厂商建议的大修年限</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="309" parent="16" name="age_limit">
+        <comment>记录厂商建议的更换年限</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="310" parent="16" name="create_time">
+        <comment>创建时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="311" parent="16" name="update_time">
+        <comment>更新时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="312" parent="16" name="delete_flag">
+        <comment>删除标记</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="313" parent="16" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="314" parent="17" name="id">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="315" parent="17" name="code">
+        <comment>编码</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="316" parent="17" name="name">
+        <comment>名称</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="317" parent="17" name="remarks">
+        <comment>描述</comment>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="318" parent="17" name="status">
+        <comment>状态（0：禁用，1：启用）</comment>
+        <data-type>int</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="319" parent="17" name="large_code">
+        <comment>设备大类</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="320" parent="17" name="mid_code">
+        <comment>设备中类</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="321" parent="17" name="s_key">
+        <comment>搜索关键字</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="322" parent="17" name="create_time">
+        <comment>创建时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="323" parent="17" name="update_time">
+        <comment>更新时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="324" parent="17" name="delete_flag">
+        <comment>删除标记</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="325" parent="17" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="326" parent="18" name="id">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="327" parent="18" name="drawer_code">
+        <comment>抽屉编码</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="328" parent="18" name="drawer_name">
+        <comment>抽屉名称</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="329" parent="18" name="all_code">
+        <comment>所属区域全路径编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="330" parent="18" name="all_name">
+        <comment>所属区域全路径名称</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="331" parent="18" name="device_code">
+        <comment>所属机柜编号</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="332" parent="18" name="drawer_coordinate">
+        <comment>抽屉坐标</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="333" parent="18" name="create_time">
+        <comment>创建时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="334" parent="18" name="update_time">
+        <comment>更新时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="335" parent="18" name="delete_flag">
+        <comment>删除标记</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="336" parent="18" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="337" parent="19" name="id">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="338" parent="19" name="code">
+        <comment>电度数据标准编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="339" parent="19" name="device_code">
+        <comment>设备编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="340" parent="19" name="functional_code">
+        <comment>设备功能类型</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="341" parent="19" name="brand">
+        <comment>品牌</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="342" parent="19" name="model">
+        <comment>型号</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="343" parent="19" name="specifications">
+        <comment>规格</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="344" parent="19" name="memo">
+        <comment>遥测信息</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="345" parent="19" name="source_system">
+        <comment>来源系统</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="346" parent="19" name="calculate_unit">
+        <comment>计量单位</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="347" parent="19" name="switch_ratio">
+        <comment>转换系数</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="348" parent="19" name="fault_code">
+        <comment>故障代码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="349" parent="19" name="create_time">
+        <comment>创建时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="350" parent="19" name="update_time">
+        <comment>更新时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="351" parent="19" name="delete_flag">
+        <comment>删除标记</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="352" parent="19" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="353" parent="20" name="id">
+        <comment>主键id</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="354" parent="20" name="info_type">
+        <comment>信息类型(05:环境测状态量，06：环境遥测测量量)</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(2)</data-type>
+      </column>
+      <column id="355" parent="20" name="point_code">
+        <comment>点位编码（关联点位表）</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="356" parent="20" name="control_type">
+        <comment>控制类型(0:非控制，1：控制)</comment>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="357" parent="20" name="link_device_code">
+        <comment>联动设备编码</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="358" parent="20" name="command_type">
+        <comment>指令类型</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="359" parent="20" name="control_service">
+        <comment>控制服务</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="360" parent="20" name="create_time">
+        <comment>创建时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="361" parent="20" name="update_time">
+        <comment>修改时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="362" parent="20" name="delete_flag">
+        <comment>删除标记(0；未删除，1：已删除)</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="363" parent="20" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="364" parent="21" name="id">
+        <comment>主键的id</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="365" parent="21" name="remote_group">
+        <comment>文件组</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="366" parent="21" name="remote_file">
+        <comment>服务器文件路径</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="367" parent="21" name="local_file">
+        <comment>本地路径</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="368" parent="21" name="ext_name">
+        <comment>后缀名</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="369" parent="21" name="category">
+        <comment>业务</comment>
+        <data-type>varchar(64)</data-type>
+      </column>
+      <column id="370" parent="21" name="module">
+        <comment>模块</comment>
+        <data-type>varchar(64)</data-type>
+      </column>
+      <column id="371" parent="21" name="category_id">
+        <comment>业务表id</comment>
+        <data-type>varchar(60)</data-type>
+      </column>
+      <column id="372" parent="21" name="create_time">
+        <comment>创建时间</comment>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="373" parent="21" name="update_time">
+        <comment>更新时间</comment>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="374" parent="21" name="status">
+        <data-type>int</data-type>
+      </column>
+      <index id="375" parent="21" name="category">
+        <columns>category
+module
+category_id</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <index id="376" parent="21" name="category_id">
+        <columns>category_id</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="377" parent="21" name="module">
+        <columns>module</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="378" parent="21" name="category">
+        <columns>category
+module
+category_id</columns>
+        <underlying-index>category</underlying-index>
+      </key>
+      <key id="379" parent="21" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="380" parent="22" name="id">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="381" parent="22" name="station_code">
+        <comment>站室编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="382" parent="22" name="room_code">
+        <comment>房间编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="383" parent="22" name="send_url">
+        <comment>下发接口URL</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="384" parent="22" name="inspection_code">
+        <comment>机器人或相机code</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="385" parent="22" name="inspection_type">
+        <comment>0:机器人 1:相机</comment>
+        <data-type>varchar(2)</data-type>
+      </column>
+      <column id="386" parent="22" name="device_code">
+        <comment>设备表唯一编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="387" parent="22" name="point_code">
+        <comment>巡检点位唯一编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="388" parent="22" name="create_time">
+        <comment>创建时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="389" parent="22" name="update_time">
+        <comment>更新时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <key id="390" parent="22" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="391" parent="23" name="id">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="392" parent="23" name="line_name">
+        <comment>线路名称</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="393" parent="23" name="line_code">
+        <comment>线路编码（不可重复）</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="394" parent="23" name="dept_id">
+        <comment>线路负责部门id</comment>
+        <data-type>int</data-type>
+      </column>
+      <column id="395" parent="23" name="create_time">
+        <comment>创建时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="396" parent="23" name="update_time">
+        <comment>更新时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="397" parent="23" name="delete_flag">
+        <comment>删除标记</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="398" parent="23" name="dept_ids">
+        <comment>层级组织ids，回显</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="399" parent="23" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="400" parent="24" name="id">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="401" parent="24" name="segment_code">
+        <comment>线路编码</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="402" parent="24" name="segment_name">
+        <comment>线路名称</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="403" parent="24" name="start_code">
+        <comment>起始站code</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="404" parent="24" name="end_code">
+        <comment>目标站code</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="405" parent="24" name="create_time">
+        <comment>创建时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="406" parent="24" name="update_time">
+        <comment>更新时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="407" parent="24" name="delete_flag">
+        <comment>删除标记</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="408" parent="24" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="409" parent="25" name="id">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="410" parent="25" name="line_code">
+        <comment>线路编码</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="411" parent="25" name="color">
+        <comment>颜色</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="412" parent="25" name="source">
+        <comment>起点</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="413" parent="25" name="target">
+        <comment>目标</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="414" parent="25" name="description">
+        <comment>描述</comment>
+        <data-type>varchar(120)</data-type>
+      </column>
+      <column id="415" parent="25" name="status">
+        <comment>状态</comment>
+        <data-type>tinyint</data-type>
+      </column>
+      <column id="416" parent="25" name="create_time">
+        <comment>创建时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="417" parent="25" name="update_time">
+        <comment>更新时间</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="418" parent="25" name="delete_flag">
+        <comment>删除标记</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="419" parent="25" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="420" parent="26" name="id">
+        <comment>主键ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="421" parent="26" name="label">
+        <comment>线路名称</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="422" parent="26" name="line_code">
+        <comment>线路编码</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="423" parent="26" name="color">
+        <comment>颜色</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="424" parent="26" name="status">
+        <comment>状态</comment>
+        <data-type>tinyint</data-type>
+      </column>
+      <column id="425" parent="26" name="create_time">
+        <comment>创建时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="426" parent="26" name="update_time">
+        <comment>更新时间</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="427" parent="26" name="position">
+        <comment>位置描述</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="428" parent="26" name="offset">
+        <comment>偏移量</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="429" parent="26" name="label_cfg">
+        <comment>名称定位（refY，refX）</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="430" parent="26" name="delete_flag">
+        <comment>删除标记</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="431" parent="26" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="432" parent="27" name="id">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="433" parent="27" name="line_code">
+        <comment>线路编码（外键,关联:i_map_line.line_code</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="434" parent="27" name="label">
+        <comment>点位名称</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="435" parent="27" name="code">
+        <comment>站点编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="436" parent="27" name="description">
+        <comment>描述</comment>
+        <data-type>varchar(120)</data-type>
+      </column>
+      <column id="437" parent="27" name="position">
+        <comment>文本偏移方位</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="438" parent="27" name="offset">
+        <comment>文本偏移量</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="439" parent="27" name="coordinate">
+        <comment>点位坐标</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="440" parent="27" name="status">
+        <comment>状态</comment>
+        <data-type>tinyint</data-type>
+      </column>
+      <column id="441" parent="27" name="create_time">
+        <comment>创建时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="442" parent="27" name="update_time">
+        <comment>更新时间</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="443" parent="27" name="shape">
+        <comment>自定义动画</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="444" parent="27" name="authorizeid">
+        <comment>站室编码</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="445" parent="27" name="delete_flag">
+        <comment>删除标记</comment>
+        <data-type>tinyint</data-type>
+      </column>
+      <key id="446" parent="27" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="447" parent="28" name="id">
+        <comment>主键的id</comment>
+        <mandatory>1</mandatory>
+        <data-type>bigint</data-type>
+      </column>
+      <column id="448" parent="28" name="bucket_name">
+        <comment>存储桶</comment>
+        <data-type>varchar(63)</data-type>
+      </column>
+      <column id="449" parent="28" name="file_name">
+        <comment>文件名称</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="450" parent="28" name="file_url">
+        <comment>文件路径</comment>
+        <data-type>varchar(500)</data-type>
+      </column>
+      <column id="451" parent="28" name="classify_file_type">
+        <comment>文件类型(1:pics,2:docs,3:videos,4:totters,5:audios,6:others)</comment>
+        <data-type>int</data-type>
+      </column>
+      <column id="452" parent="28" name="suffix">
+        <comment>后缀名</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="453" parent="28" name="file_size">
+        <comment>文件大小(单位:KB)</comment>
+        <data-type>bigint</data-type>
+      </column>
+      <column id="454" parent="28" name="create_time">
+        <comment>创建时间</comment>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="455" parent="28" name="update_time">
+        <comment>更新时间</comment>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="456" parent="28" name="delete_flag">
+        <comment>删除标记（0-未删除 1-已删除）</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="457" parent="28" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="458" parent="29" name="id">
+        <comment>主键id</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="459" parent="29" name="point_code">
+        <comment>点位编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="460" parent="29" name="info_code">
+        <comment>信息体地址</comment>
+        <data-type>int</data-type>
+      </column>
+      <column id="461" parent="29" name="point_name">
+        <comment>点位名称</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="462" parent="29" name="device_code">
+        <comment>设备编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="463" parent="29" name="part_code">
+        <comment>部件编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="464" parent="29" name="line_code">
+        <comment>线路编码</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="465" parent="29" name="station_code">
+        <comment>站室编码</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="466" parent="29" name="room_code">
+        <comment>房间编码</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="467" parent="29" name="point_type">
+        <comment>点位类型（点位属性配置）</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="468" parent="29" name="use_to">
+        <comment>应用于（0-设备 1-xxx 2-xxx）</comment>
+        <data-type>varchar(20)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="469" parent="29" name="enable_status">
+        <comment>启用状态（0-启用  1-停用）</comment>
+        <data-type>varchar(20)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="470" parent="29" name="sys_type">
+        <comment>系统分类（1-SCADA  2-巡检系统 3-xxx）</comment>
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="471" parent="29" name="point_unit">
+        <comment>单位</comment>
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="472" parent="29" name="coefficient">
+        <comment>系数</comment>
+        <data-type>double</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="473" parent="29" name="alarm_level">
+        <comment>告警等级</comment>
+        <data-type>int</data-type>
+      </column>
+      <column id="474" parent="29" name="value1_desc">
+        <comment>状态1描述（仅当info_type【信息类型】为1【遥信】时，该描述有效）</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="475" parent="29" name="value0_desc">
+        <comment>状态0描述（仅当info_type【信息类型】为1【遥信】时，该描述有效）</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="476" parent="29" name="update_time">
+        <comment>更新时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="477" parent="29" name="create_time">
+        <comment>入库时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="478" parent="29" name="delete_flag">
+        <comment>删除标记</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="479" parent="29" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="480" parent="30" name="id">
+        <comment>id</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="481" parent="30" name="property_code">
+        <comment>属性配置编码</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="482" parent="30" name="addition_type">
+        <comment>类型(1-阈值,2-属性值)</comment>
+        <data-type>tinyint</data-type>
+      </column>
+      <column id="483" parent="30" name="name">
+        <comment>名称</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="484" parent="30" name="value">
+        <comment>值</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="485" parent="30" name="create_time">
+        <comment>创建日期 默认为当前时间</comment>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="486" parent="30" name="update_time">
+        <comment>更新时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="487" parent="30" name="delete_flag">
+        <comment>删除标记</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="488" parent="30" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="489" parent="31" name="id">
+        <comment>id</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="490" parent="31" name="info_type">
+        <comment>信息类型(1-遥信, 2-遥测, 3-遥视状态量, 4-遥视测量量， 5-环境状态量， 6-环境测量量)</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="491" parent="31" name="name">
+        <comment>检测点类型</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="492" parent="31" name="code">
+        <comment>码值</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="493" parent="31" name="pcode">
+        <comment>父编码</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="494" parent="31" name="alarm_tag">
+        <comment>告警属性</comment>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="495" parent="31" name="value_tag">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="496" parent="31" name="unit_code">
+        <comment>单位编码</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="497" parent="31" name="create_time">
+        <comment>创建日期 默认为当前时间</comment>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="498" parent="31" name="update_time">
+        <comment>更新时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="499" parent="31" name="delete_flag">
+        <comment>删除标记</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="500" parent="31" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="501" parent="32" name="id">
+        <comment>主键id</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="502" parent="32" name="type_code">
+        <comment>点位类型编码</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="503" parent="32" name="value">
+        <comment>值</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="504" parent="32" name="descrition">
+        <comment>描述</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="505" parent="32" name="create_time">
+        <comment>创建时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="506" parent="32" name="update_time">
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="507" parent="32" name="delete_flag">
+        <comment>删除标记</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="508" parent="32" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="509" parent="33" name="id">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="510" parent="33" name="city">
+        <comment>所在城市</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="511" parent="33" name="company">
+        <comment>地铁运营公司</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="512" parent="33" name="software_version">
+        <comment>系统版本</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="513" parent="33" name="system_name">
+        <comment>系统名称</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="514" parent="33" name="logo_url">
+        <comment>logo图片</comment>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="515" parent="33" name="logo_url1">
+        <comment>logo图片1</comment>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="516" parent="33" name="logo_url2">
+        <comment>logo图片2</comment>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="517" parent="33" name="create_time">
+        <comment>创建时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="518" parent="33" name="update_time">
+        <comment>更新时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="519" parent="33" name="delete_flag">
+        <comment>删除标记</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="520" parent="33" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="521" parent="34" name="id">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="522" parent="34" name="job_name">
+        <comment>job名称</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="523" parent="34" name="job_group">
+        <comment>job组</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="524" parent="34" name="job_class_name">
+        <comment>job类名</comment>
+        <data-type>varchar(120)</data-type>
+      </column>
+      <column id="525" parent="34" name="cron_expression">
+        <comment>cron表达式</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="526" parent="34" name="trigger_state">
+        <comment>job状态</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="527" parent="34" name="description">
+        <comment>任务描述</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="528" parent="34" name="create_time">
+        <comment>创建时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="529" parent="34" name="update_time">
+        <comment>更新时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="530" parent="34" name="delete_flag">
+        <comment>删除标记</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="531" parent="34" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="532" parent="35" name="id">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="533" parent="35" name="username">
+        <comment>分配厂家的用户名</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="534" parent="35" name="password">
+        <comment>分配厂家的密码</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="535" parent="35" name="manufacturer_name">
+        <comment>厂家名称</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="536" parent="35" name="status">
+        <comment>状态：0 - 启用 1 - 禁用</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="537" parent="35" name="online_flag">
+        <comment>厂家是否在线 0 - 离线 1 - 在线</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="538" parent="35" name="created_time">
+        <comment>创建时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="539" parent="35" name="update_time">
+        <comment>更新时间</comment>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="540" parent="35" name="delete_flag">
+        <comment>删除标记</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="541" parent="35" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="542" parent="36" name="id">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="543" parent="36" name="code">
+        <comment>遥信数据标准编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="544" parent="36" name="functional_code">
+        <comment>设备功能类型</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="545" parent="36" name="device_code">
+        <comment>设备编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="546" parent="36" name="brand">
+        <comment>品牌</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="547" parent="36" name="model">
+        <comment>型号</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="548" parent="36" name="signal_msg">
+        <comment>遥信信息</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="549" parent="36" name="source_system">
+        <comment>来源系统</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="550" parent="36" name="fault_grade">
+        <comment>故障等级</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="551" parent="36" name="normal_status">
+        <comment>正常状态</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="552" parent="36" name="normal_desc">
+        <comment>正常状态说明</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="553" parent="36" name="reference_value">
+        <comment>参照值</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="554" parent="36" name="reference_value_desc">
+        <comment>参照值说明</comment>
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="555" parent="36" name="reference_value1">
+        <comment>参照值1</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="556" parent="36" name="reference_value_desc1">
+        <comment>参照值1说明</comment>
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="557" parent="36" name="location_code">
+        <comment>设备位置编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="558" parent="36" name="create_time">
+        <comment>创建时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="559" parent="36" name="update_time">
+        <comment>更新时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="560" parent="36" name="delete_flag">
+        <comment>删除标记</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="561" parent="36" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="562" parent="37" name="id">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="563" parent="37" name="code">
+        <comment>遥测标准编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="564" parent="37" name="device_code">
+        <comment>设备编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="565" parent="37" name="functional_code">
+        <comment>设备功能类型</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="566" parent="37" name="brand">
+        <comment>品牌</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="567" parent="37" name="model">
+        <comment>型号</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="568" parent="37" name="specifications">
+        <comment>规格</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="569" parent="37" name="telemetry_msg">
+        <comment>遥测信息</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="570" parent="37" name="source_system">
+        <comment>来源系统</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="571" parent="37" name="calculate_unit">
+        <comment>计量单位</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="572" parent="37" name="switch_ratio">
+        <comment>转换系数</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="573" parent="37" name="fault_code">
+        <comment>故障代码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="574" parent="37" name="create_time">
+        <comment>创建时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="575" parent="37" name="update_time">
+        <comment>更新时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="576" parent="37" name="delete_flag">
+        <comment>删除标记</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="577" parent="37" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="578" parent="38" name="id">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="579" parent="38" name="point_code">
+        <comment>点位的唯一编码（巡检结果的点位编码寸的就是它）</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="580" parent="38" name="point_name">
+        <comment>点位名称</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="581" parent="38" name="point_type">
+        <comment>点位类型</comment>
+        <data-type>char(50)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="582" parent="38" name="device_code">
+        <comment>父级设备编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="583" parent="38" name="threshold_code">
+        <comment>阈值编码</comment>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="584" parent="38" name="rating_value">
+        <comment>额定值</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="585" parent="38" name="volatility_value">
+        <comment>浮动值</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="586" parent="38" name="min_value">
+        <comment>最小值</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="587" parent="38" name="max_value">
+        <comment>最大值</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="588" parent="38" name="point_unit">
+        <comment>单位</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="589" parent="38" name="value_type">
+        <comment>点位值类型（0-状态量 1-测量量 2.....）</comment>
+        <data-type>tinyint</data-type>
+      </column>
+      <column id="590" parent="38" name="create_time">
+        <comment>创建时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="591" parent="38" name="update_time">
+        <comment>更新时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="592" parent="38" name="delete_flag">
+        <comment>删除标记</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="593" parent="38" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="594" parent="39" name="id">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="595" parent="39" name="robot_code">
+        <comment>设备编码（对应i_device_info表中的编码device_code）</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="596" parent="39" name="robot_sn">
+        <comment>机器人代号（机器人唯一编码）</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="597" parent="39" name="robot_name">
+        <comment>机器人名称</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="598" parent="39" name="station_code">
+        <comment>机器人所在站室编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="599" parent="39" name="room_code">
+        <comment>房间编号</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="600" parent="39" name="robot_ip">
+        <comment>机器人IP</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="601" parent="39" name="robot_port">
+        <comment>机器人端口</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="602" parent="39" name="brand">
+        <comment>品牌</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="603" parent="39" name="robot_type">
+        <comment>机器人类型（1：挂轨，2：轮式，3：隧道、4：服务机器人、5：攀爬机器人）</comment>
+        <data-type>tinyint</data-type>
+      </column>
+      <column id="604" parent="39" name="robot_version">
+        <comment>机器人版本</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="605" parent="39" name="all_name">
+        <comment>全机器人路径名称</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="606" parent="39" name="all_code">
+        <comment>全机器人路径</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="607" parent="39" name="robot_status">
+        <comment>机器人状态（0-在线  1-离线）</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="608" parent="39" name="robot_mode">
+        <comment>机器人运行模式（0-手动模式 1-自动模式 2-急停  3-检修）</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="609" parent="39" name="inspection_status">
+        <comment>机器人巡检状态（0-空闲  1-巡检中  2-暂停）</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="610" parent="39" name="create_time">
+        <comment>创建时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="611" parent="39" name="update_time">
+        <comment>修改时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="612" parent="39" name="delete_flag">
+        <comment>删除标记</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="613" parent="39" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="614" parent="40" name="id">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="615" parent="40" name="room_code">
+        <comment>区域编码(房间)</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="616" parent="40" name="room_name">
+        <comment>room_name</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="617" parent="40" name="room_type">
+        <comment>房间类型（0：主控室、1：GIS室、2：SVG室、3：变压室、4：开关室，5-主变室，99:其它）</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="618" parent="40" name="room_enable">
+        <comment>是否启用（0：未启用、1：启用）</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="619" parent="40" name="all_code">
+        <comment>全路径编码（线路编码_站所编码_区域编码）</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="620" parent="40" name="station_code">
+        <comment>主站所编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="621" parent="40" name="is_metro">
+        <comment>是否属于地铁(0-是  1-否)</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="622" parent="40" name="room_weight">
+        <comment>房间健康度权重</comment>
+        <data-type>decimal(5,2)</data-type>
+        <default-expression>&apos;1.00&apos;</default-expression>
+      </column>
+      <column id="623" parent="40" name="room_circuit">
+        <comment>k=0,k=1,房间健康度致命项（健康度&lt;100生效）</comment>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="624" parent="40" name="device_weight">
+        <comment>感知设备健康度权重</comment>
+        <data-type>varchar(50)</data-type>
+        <default-expression>&apos;{&quot;R1&quot;:1.00,&quot;R2&quot;:1.00,&quot;R3&quot;:0.00,&quot;R4&quot;:0.00}&apos;</default-expression>
+      </column>
+      <column id="625" parent="40" name="device_circuit">
+        <comment>k=0,k=-1,感知设备健康度致命项（健康度&lt;100生效）</comment>
+        <data-type>varchar(50)</data-type>
+        <default-expression>&apos;{&quot;K1&quot;:1,&quot;K2&quot;:1,&quot;K3&quot;:1,&quot;K4&quot;:1}&apos;</default-expression>
+      </column>
+      <column id="626" parent="40" name="created_time">
+        <comment>创建时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="627" parent="40" name="update_time">
+        <comment>更新时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="628" parent="40" name="delete_flag">
+        <comment>删除标记</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="629" parent="40" name="dept_id">
+        <comment>组织id</comment>
+        <data-type>int</data-type>
+      </column>
+      <column id="630" parent="40" name="dept_ids">
+        <comment>层级组织ids，回显</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="631" parent="40" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="632" parent="41" name="id">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="633" parent="41" name="robot_ip">
+        <comment>Robot的ip地址</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="634" parent="41" name="camera">
+        <comment>高清相机</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="635" parent="41" name="thermal">
+        <comment>红外相机</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="636" parent="41" name="ground_discharge_sensor">
+        <comment>局放地电波</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="637" parent="41" name="ultra_discharge_sensor">
+        <comment>局放超声波</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="638" parent="41" name="o2_sensor">
+        <comment>氧气</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="639" parent="41" name="o3_sensor">
+        <comment>臭氧</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="640" parent="41" name="co2_sensor">
+        <comment>二氧化碳</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="641" parent="41" name="noise_sensor">
+        <comment>噪音</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="642" parent="41" name="env_temp_sensor">
+        <comment>环境温度</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="643" parent="41" name="env_humi_sensor">
+        <comment>环境湿度</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="644" parent="41" name="board_temp_sensor">
+        <comment>核心板温度</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="645" parent="41" name="board_humi_sensor">
+        <comment>核心板湿度</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="646" parent="41" name="smoke_sensor">
+        <comment>烟雾</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="647" parent="41" name="created_time">
+        <comment>入库时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="648" parent="41" name="update_time">
+        <comment>更新时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <key id="649" parent="41" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="650" parent="42" name="id">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="651" parent="42" name="line_code">
+        <comment>所属线路编码</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="652" parent="42" name="station_code">
+        <comment>站所编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="653" parent="42" name="station_name">
+        <comment>站所名称</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="654" parent="42" name="station_longitude">
+        <comment>经度</comment>
+        <data-type>double</data-type>
+      </column>
+      <column id="655" parent="42" name="station_latitude">
+        <comment>纬度</comment>
+        <data-type>double</data-type>
+      </column>
+      <column id="656" parent="42" name="line_flag">
+        <comment>是否属于地铁标记 0-是   1-否</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="657" parent="42" name="station_type">
+        <comment>站所类型1：主所、2：牵引所、3：混合所、4：降压所）</comment>
+        <data-type>tinyint</data-type>
+      </column>
+      <column id="658" parent="42" name="created_time">
+        <comment>创建时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="659" parent="42" name="update_time">
+        <comment>更新时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="660" parent="42" name="delete_flag">
+        <comment>删除标记</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="661" parent="42" name="dept_id">
+        <comment>组织id</comment>
+        <data-type>int</data-type>
+      </column>
+      <column id="662" parent="42" name="dept_ids">
+        <comment>层级组织ids，回显</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="663" parent="42" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="664" parent="43" name="id">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="665" parent="43" name="threshold_code">
+        <comment>阈值编号</comment>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="666" parent="43" name="threshold_name">
+        <comment>阈值名称</comment>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="667" parent="43" name="large_code">
+        <comment>设备大类编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="668" parent="43" name="mid_code">
+        <comment>设备中类编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="669" parent="43" name="small_code">
+        <comment>设备小类编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="670" parent="43" name="point_type">
+        <comment>点位类型</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="671" parent="43" name="upper_limit">
+        <comment>预警上限</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="672" parent="43" name="upper_enable">
+        <comment>预警上限是否使能</comment>
+        <data-type>char(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="673" parent="43" name="lower_limit">
+        <comment>预警下限</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="674" parent="43" name="lower_enable">
+        <comment>预警下限是否使能</comment>
+        <data-type>char(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="675" parent="43" name="common_upper_limit">
+        <comment>一般报警上限</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="676" parent="43" name="common_upper_enable">
+        <comment>一般报警上限是否使能</comment>
+        <data-type>char(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="677" parent="43" name="common_lower_limit">
+        <comment>一般报警下限</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="678" parent="43" name="common_lower_enable">
+        <comment>一般报警下限是否使能</comment>
+        <data-type>char(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="679" parent="43" name="serious_upper_limit">
+        <comment>严重报警上限</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="680" parent="43" name="serious_upper_enable">
+        <comment>严重告警是否使能</comment>
+        <data-type>char(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="681" parent="43" name="serious_lower_limit">
+        <comment>严重报警下限</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="682" parent="43" name="serious_lower_enable">
+        <comment>严重报警下限是否使能</comment>
+        <data-type>char(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="683" parent="43" name="critical_upper_limit">
+        <comment>危急报警上限</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="684" parent="43" name="critical_upper_enable">
+        <comment>危急报警上限是否使能</comment>
+        <data-type>char(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="685" parent="43" name="critical_lower_limit">
+        <comment>危急报警下限</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="686" parent="43" name="critical_lower_enable">
+        <comment>危急报警下限是否使能</comment>
+        <data-type>char(1)</data-type>
+      </column>
+      <column id="687" parent="43" name="create_time">
+        <comment>创建时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="688" parent="43" name="update_time">
+        <comment>修改时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="689" parent="43" name="delete_flag">
+        <comment>删除标记</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="690" parent="43" name="threshold_describe">
+        <comment>阈值描述</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <key id="691" parent="43" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="692" parent="44" name="id">
+        <comment>主键id</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="693" parent="44" name="line_code">
+        <comment>线路编码</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="694" parent="44" name="station_code">
+        <comment>站室编码</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="695" parent="44" name="room_code">
+        <comment>房间编码</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="696" parent="44" name="device_code">
+        <comment>设备编码</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="697" parent="44" name="user_name">
+        <comment>登录名</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(40)</data-type>
+      </column>
+      <column id="698" parent="44" name="password">
+        <comment>密码</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(36)</data-type>
+      </column>
+      <column id="699" parent="44" name="ip">
+        <comment>摄像头ip地址</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(40)</data-type>
+      </column>
+      <column id="700" parent="44" name="port">
+        <comment>访问端口号</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="701" parent="44" name="mapping_ip">
+        <comment>映射ip地址</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(40)</data-type>
+      </column>
+      <column id="702" parent="44" name="mapping_port">
+        <comment>映射端口</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="703" parent="44" name="device_port">
+        <comment>设备端口</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="704" parent="44" name="sdk_port">
+        <comment>SDK端口</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="705" parent="44" name="hls_url">
+        <comment>HLS流地址</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="706" parent="44" name="rtmp_url">
+        <comment>RTMP流地址</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="707" parent="44" name="rtsp_url">
+        <comment>RTSP端口映射</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="708" parent="44" name="channel_num">
+        <comment>通道号</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="709" parent="44" name="control_component">
+        <comment>控制组件</comment>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="710" parent="44" name="create_time">
+        <comment>创建时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="711" parent="44" name="update_time">
+        <comment>修改时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <index id="712" parent="44" name="device_unique_index">
+        <columns>line_code
+station_code
+room_code
+device_code</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="713" parent="44" name="device_unique_index">
+        <columns>line_code
+station_code
+room_code
+device_code</columns>
+        <underlying-index>device_unique_index</underlying-index>
+      </key>
+      <key id="714" parent="44" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="715" parent="45" name="id">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="716" parent="45" name="date">
+        <comment>日期</comment>
+        <data-type>date</data-type>
+      </column>
+      <column id="717" parent="45" name="code">
+        <comment>编码</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="718" parent="45" name="health">
+        <comment>健康度</comment>
+        <mandatory>1</mandatory>
+        <data-type>decimal(10)</data-type>
+      </column>
+      <column id="719" parent="45" name="update_time">
+        <comment>更新时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="720" parent="45" name="created_time">
+        <comment>创建时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <key id="721" parent="45" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="722" parent="46" name="id">
+        <comment>主键id</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="723" parent="46" name="city">
+        <comment>城市编码</comment>
+        <data-type>varchar(10)</data-type>
+      </column>
+      <column id="724" parent="46" name="device_type">
+        <comment>设备类型</comment>
+        <data-type>tinyint</data-type>
+      </column>
+      <column id="725" parent="46" name="type_code">
+        <comment>点位类型编码</comment>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="726" parent="46" name="type">
+        <comment>类型</comment>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="727" parent="46" name="type_name">
+        <comment>点位类型名称</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="728" parent="46" name="location">
+        <comment>地理位置</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="729" parent="46" name="create_time">
+        <comment>创建时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="730" parent="46" name="update_time">
+        <comment>更新时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="731" parent="46" name="delete_flag">
+        <comment>删除标记</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="732" parent="46" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="733" parent="47" name="id">
+        <comment>主键id</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="734" parent="47" name="plan_no">
+        <comment>任务编号</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="735" parent="47" name="plan_name">
+        <comment>计划名称</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="736" parent="47" name="line_code">
+        <comment>线路编码</comment>
+        <data-type>varchar(30)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="737" parent="47" name="station_code">
+        <comment>变电总站编码</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="738" parent="47" name="room_code">
+        <comment>站室编码</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="739" parent="47" name="robot_code">
+        <comment>机器人（相机）编码</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="740" parent="47" name="time_expression">
+        <comment>corn表达式</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="741" parent="47" name="device_total">
+        <comment>设备总数</comment>
+        <data-type>int</data-type>
+      </column>
+      <column id="742" parent="47" name="device_type">
+        <comment>巡检设备类型 1-机器人  2-相机</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="743" parent="47" name="point_total">
+        <data-type>int</data-type>
+      </column>
+      <column id="744" parent="47" name="plan_mark">
+        <comment>计划备注</comment>
+        <data-type>varchar(120)</data-type>
+      </column>
+      <column id="745" parent="47" name="status">
+        <comment>任务状态：0-禁用 1-启用</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="746" parent="47" name="plan_type">
+        <comment>计划类型（1例巡  2特巡）</comment>
+        <data-type>tinyint</data-type>
+      </column>
+      <column id="747" parent="47" name="date_flag">
+        <comment>时间类型（1-每日  2-每周  3-每月）</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="748" parent="47" name="date_num">
+        <comment>日期/周（1-31）</comment>
+        <data-type>int</data-type>
+      </column>
+      <column id="749" parent="47" name="time_value">
+        <comment>具体时间（时分秒）</comment>
+        <data-type>varchar(20)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="750" parent="47" name="start_time">
+        <comment>计划开始时间</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="751" parent="47" name="end_time">
+        <comment>计划结束时间</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="752" parent="47" name="create_time">
+        <comment>创建时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="753" parent="47" name="update_time">
+        <comment>更新时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="754" parent="47" name="delete_flag">
+        <comment>删除标记</comment>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="755" parent="47" name="plan_json">
+        <data-type>json</data-type>
+      </column>
+      <index id="756" parent="47" name="plan_no">
+        <columns>plan_no</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="757" parent="47" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="758" parent="48" name="id">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>bigint</data-type>
+      </column>
+      <column id="759" parent="48" name="plan_no">
+        <comment>计划号</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="760" parent="48" name="robot_code">
+        <comment>机器人编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="761" parent="48" name="device_code">
+        <comment>设备编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="762" parent="48" name="device_name">
+        <comment>设备名称</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="763" parent="48" name="point_code">
+        <comment>巡检点编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="764" parent="48" name="point_name">
+        <comment>巡检点名称</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="765" parent="48" name="created_time">
+        <comment>创建时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="766" parent="48" name="update_time">
+        <comment>更新时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="767" parent="48" name="delete_flag">
+        <comment>删除标记</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="768" parent="48" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="769" parent="49" name="id">
+        <comment>主键id</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="770" parent="49" name="device_code">
+        <comment>设备编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="771" parent="49" name="point_code">
+        <comment>巡检点</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="772" parent="49" name="point_status">
+        <comment>巡检状态</comment>
+        <data-type>tinyint</data-type>
+      </column>
+      <column id="773" parent="49" name="create_time">
+        <comment>创建时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="774" parent="49" name="update_time">
+        <comment>更新时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="775" parent="49" name="delete_flag">
+        <comment>删除标记</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="776" parent="49" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="777" parent="50" name="id">
+        <comment>主键id</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="778" parent="50" name="task_no">
+        <comment>任务编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="779" parent="50" name="task_name">
+        <comment>任务名称</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="780" parent="50" name="plan_no">
+        <comment>计划号</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="781" parent="50" name="task_type">
+        <comment>任务类型：1-定时下发 2-立即下发</comment>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="782" parent="50" name="task_time">
+        <comment>任务时间</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="783" parent="50" name="end_time">
+        <comment>结束时间</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="784" parent="50" name="device_total">
+        <comment>设备总数</comment>
+        <data-type>int</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="785" parent="50" name="device_bug">
+        <comment>错误数</comment>
+        <data-type>int</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="786" parent="50" name="already_num">
+        <comment>当前检查的设备总数</comment>
+        <data-type>int</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="787" parent="50" name="status">
+        <comment>任务当前状态：-1-下发失败  0-待执行  1-正在执行  2-已完成  3-已取消 4-已暂停</comment>
+        <data-type>tinyint</data-type>
+      </column>
+      <column id="788" parent="50" name="old_status">
+        <comment>历史状态</comment>
+        <data-type>tinyint</data-type>
+      </column>
+      <column id="789" parent="50" name="create_time">
+        <comment>入库时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <index id="790" parent="50" name="task_no">
+        <columns>task_no</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="791" parent="50" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <key id="792" parent="50" name="task_no">
+        <columns>task_no</columns>
+        <underlying-index>task_no</underlying-index>
+      </key>
+      <column id="793" parent="51" name="id">
+        <comment>主键id</comment>
+        <mandatory>1</mandatory>
+        <data-type>bigint</data-type>
+      </column>
+      <column id="794" parent="51" name="task_no">
+        <comment>任务号</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="795" parent="51" name="point_code">
+        <comment>点位编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="796" parent="51" name="data_date">
+        <comment>任务结束时间</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="797" parent="51" name="data_value">
+        <comment>值</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="798" parent="51" name="data_unit">
+        <comment>单位</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="799" parent="51" name="data_status">
+        <comment>状态</comment>
+        <data-type>tinyint</data-type>
+      </column>
+      <column id="800" parent="51" name="alarm_level">
+        <comment>告警级别</comment>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="801" parent="51" name="point_type">
+        <comment>点位类型</comment>
+        <data-type>tinyint(1)</data-type>
+      </column>
+      <column id="802" parent="51" name="img_url">
+        <comment>图片文件路径</comment>
+        <data-type>varchar(120)</data-type>
+      </column>
+      <column id="803" parent="51" name="create_time">
+        <comment>入库时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <key id="804" parent="51" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="805" parent="52" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="806" parent="52" name="inspection_code">
+        <comment>巡检设备编码(相机或者机器人)</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="807" parent="52" name="plan_no">
+        <comment>计划no</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="808" parent="52" name="task_time">
+        <comment>任务时间</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="809" parent="52" name="task_no">
+        <comment>任务no</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="810" parent="52" name="task_name">
+        <comment>任务名称</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="811" parent="52" name="device_code">
+        <comment>设备code</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="812" parent="52" name="device_name">
+        <comment>设备名称</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="813" parent="52" name="point_type">
+        <comment>测点种类</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="814" parent="52" name="point_code">
+        <comment>测点code</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="815" parent="52" name="point_name">
+        <comment>测点名称</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="816" parent="52" name="point_status">
+        <comment>测点状态</comment>
+        <data-type>tinyint</data-type>
+      </column>
+      <column id="817" parent="52" name="data_time">
+        <comment>巡检时间</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="818" parent="52" name="data_value">
+        <comment>巡检结果</comment>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="819" parent="52" name="pre_data_value">
+        <comment>上次巡检结果</comment>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="820" parent="52" name="data_unit">
+        <comment>单位</comment>
+        <data-type>varchar(64)</data-type>
+      </column>
+      <column id="821" parent="52" name="data_status">
+        <comment>巡检状态</comment>
+        <data-type>tinyint</data-type>
+      </column>
+      <column id="822" parent="52" name="attachment_url">
+        <comment>巡检图片</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="823" parent="52" name="alarm_flag">
+        <comment>是否告警0:否,1:是</comment>
+        <data-type>tinyint</data-type>
+      </column>
+      <column id="824" parent="52" name="alarm_level">
+        <comment>告警等级</comment>
+        <data-type>int</data-type>
+      </column>
+      <column id="825" parent="52" name="alarm_threshold">
+        <comment>告警阈值</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <index id="826" parent="52" name="point_code">
+        <columns>point_code</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="827" parent="52" name="point_code">
+        <columns>point_code</columns>
+        <underlying-index>point_code</underlying-index>
+      </key>
+      <key id="828" parent="52" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="829" parent="53" name="dept_id">
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="830" parent="53" name="name">
+        <comment>部门名称</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="831" parent="53" name="sort">
+        <comment>排序</comment>
+        <data-type>int</data-type>
+      </column>
+      <column id="832" parent="53" name="del_flag">
+        <comment>是否删除 是否删除  -1：已删除  0：正常</comment>
+        <data-type>char(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="833" parent="53" name="parent_id">
+        <data-type>int</data-type>
+      </column>
+      <column id="834" parent="53" name="create_time">
+        <comment>创建时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="835" parent="53" name="update_time">
+        <comment>修改时间</comment>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <key id="836" parent="53" name="PRIMARY">
+        <columns>dept_id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="837" parent="54" name="ancestor">
+        <comment>祖先节点</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="838" parent="54" name="descendant">
+        <comment>后代节点</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <key id="839" parent="54" name="PRIMARY">
+        <columns>ancestor
+descendant</columns>
+        <primary>1</primary>
+      </key>
+      <column id="840" parent="55" name="id">
+        <mandatory>1</mandatory>
+        <data-type>bigint</data-type>
+      </column>
+      <column id="841" parent="55" name="pid">
+        <comment>父节点id</comment>
+        <data-type>bigint</data-type>
+      </column>
+      <column id="842" parent="55" name="sort">
+        <data-type>int</data-type>
+      </column>
+      <column id="843" parent="55" name="name">
+        <comment>名称</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="844" parent="55" name="value">
+        <comment>值</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="845" parent="55" name="description">
+        <comment>描述</comment>
+        <data-type>varchar(200)</data-type>
+      </column>
+      <column id="846" parent="55" name="del_flag">
+        <comment>删除标识 删除标识（0-正常,1-删除）</comment>
+        <data-type>char(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="847" parent="55" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="848" parent="56" name="id">
+        <comment>主键ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>bigint</data-type>
+      </column>
+      <column id="849" parent="56" name="type">
+        <comment>日志类型（0:操作日志;1:登录日志;2:定时任务;）</comment>
+        <data-type>tinyint</data-type>
+      </column>
+      <column id="850" parent="56" name="operate_type">
+        <comment>操作类型（1查询，2添加，3修改，4删除）</comment>
+        <data-type>int</data-type>
+      </column>
+      <column id="851" parent="56" name="title">
+        <comment>日志标题</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="852" parent="56" name="service_name">
+        <comment>服务ID</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="853" parent="56" name="remote_addr">
+        <comment>操作ip地址</comment>
+        <data-type>varchar(120)</data-type>
+      </column>
+      <column id="854" parent="56" name="user_agent">
+        <comment>用户代理</comment>
+        <data-type>varchar(120)</data-type>
+      </column>
+      <column id="855" parent="56" name="request_uri">
+        <comment>请求URI</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="856" parent="56" name="method">
+        <comment>请求方式</comment>
+        <data-type>varchar(120)</data-type>
+      </column>
+      <column id="857" parent="56" name="params">
+        <comment>参数</comment>
+        <data-type>varchar(500)</data-type>
+      </column>
+      <column id="858" parent="56" name="time">
+        <comment>执行时间(毫秒)</comment>
+        <data-type>bigint</data-type>
+      </column>
+      <column id="859" parent="56" name="exception">
+        <comment>异常信息</comment>
+        <data-type>varchar(2000)</data-type>
+      </column>
+      <column id="860" parent="56" name="create_by">
+        <comment>创建者</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="861" parent="56" name="del_flag">
+        <comment>删除标记</comment>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="862" parent="56" name="update_time">
+        <comment>更新时间</comment>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="863" parent="56" name="create_time">
+        <comment>创建时间</comment>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <key id="864" parent="56" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="865" parent="57" name="menu_id">
+        <comment>菜单ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="866" parent="57" name="name">
+        <comment>菜单名称</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="867" parent="57" name="permission">
+        <comment>菜单权限标识</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="868" parent="57" name="path">
+        <comment>前端URL</comment>
+        <data-type>varchar(128)</data-type>
+      </column>
+      <column id="869" parent="57" name="parent_id">
+        <comment>父菜单ID</comment>
+        <data-type>int</data-type>
+      </column>
+      <column id="870" parent="57" name="icon">
+        <comment>图标</comment>
+        <data-type>varchar(32)</data-type>
+      </column>
+      <column id="871" parent="57" name="component">
+        <comment>VUE页面</comment>
+        <data-type>varchar(64)</data-type>
+      </column>
+      <column id="872" parent="57" name="sort">
+        <comment>排序值</comment>
+        <data-type>int</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="873" parent="57" name="keep_alive">
+        <comment>0-开启，1- 关闭</comment>
+        <data-type>char(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="874" parent="57" name="type">
+        <comment>菜单类型 菜单类型 （0菜单 1按钮）</comment>
+        <data-type>char(1)</data-type>
+      </column>
+      <column id="875" parent="57" name="menu_show">
+        <comment>菜单是否显示（0：不展示 1：展示）</comment>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="876" parent="57" name="create_time">
+        <comment>创建时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="877" parent="57" name="update_time">
+        <comment>更新时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="878" parent="57" name="del_flag">
+        <comment>逻辑删除标记 逻辑删除标记(0--正常 1--删除)</comment>
+        <data-type>char(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="879" parent="57" name="PRIMARY">
+        <columns>menu_id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="880" parent="58" name="client_id">
+        <mandatory>1</mandatory>
+        <data-type>varchar(32)</data-type>
+      </column>
+      <column id="881" parent="58" name="resource_ids">
+        <data-type>varchar(256)</data-type>
+      </column>
+      <column id="882" parent="58" name="client_secret">
+        <data-type>varchar(256)</data-type>
+      </column>
+      <column id="883" parent="58" name="scope">
+        <data-type>varchar(256)</data-type>
+      </column>
+      <column id="884" parent="58" name="authorized_grant_types">
+        <data-type>varchar(256)</data-type>
+      </column>
+      <column id="885" parent="58" name="web_server_redirect_uri">
+        <data-type>varchar(256)</data-type>
+      </column>
+      <column id="886" parent="58" name="authorities">
+        <data-type>varchar(256)</data-type>
+      </column>
+      <column id="887" parent="58" name="access_token_validity">
+        <data-type>int</data-type>
+      </column>
+      <column id="888" parent="58" name="refresh_token_validity">
+        <data-type>int</data-type>
+      </column>
+      <column id="889" parent="58" name="additional_information">
+        <data-type>varchar(4096)</data-type>
+      </column>
+      <column id="890" parent="58" name="autoapprove">
+        <data-type>varchar(256)</data-type>
+      </column>
+      <column id="891" parent="58" name="tenant_id">
+        <comment>所属租户</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="892" parent="58" name="PRIMARY">
+        <columns>client_id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="893" parent="59" name="role_id">
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="894" parent="59" name="role_name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(64)</data-type>
+      </column>
+      <column id="895" parent="59" name="role_code">
+        <mandatory>1</mandatory>
+        <data-type>varchar(64)</data-type>
+      </column>
+      <column id="896" parent="59" name="role_desc">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="897" parent="59" name="create_time">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="898" parent="59" name="update_time">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="899" parent="59" name="del_flag">
+        <comment>删除标识 删除标识（0-正常,1-删除）</comment>
+        <data-type>char(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="900" parent="59" name="PRIMARY">
+        <columns>role_id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="901" parent="60" name="role_id">
+        <comment>角色ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="902" parent="60" name="menu_id">
+        <comment>菜单ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <key id="903" parent="60" name="PRIMARY">
+        <columns>role_id
+menu_id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="904" parent="61" name="id">
+        <comment>主键id</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="905" parent="61" name="role_id">
+        <comment>角色id</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="906" parent="61" name="line_code">
+        <comment>线路编码</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="907" parent="61" name="station_code">
+        <comment>站室编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="908" parent="61" name="room_code">
+        <comment>房间编码</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <key id="909" parent="61" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="910" parent="62" name="id">
+        <comment>主键</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="911" parent="62" name="route_name">
+        <comment>路由名称</comment>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="912" parent="62" name="route_id">
+        <comment>路由ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="913" parent="62" name="predicates">
+        <comment>断言</comment>
+        <data-type>varchar(4000)</data-type>
+      </column>
+      <column id="914" parent="62" name="filters">
+        <comment>过滤器</comment>
+        <data-type>varchar(4000)</data-type>
+      </column>
+      <column id="915" parent="62" name="uri">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="916" parent="62" name="order">
+        <comment>排序</comment>
+        <data-type>int</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="917" parent="62" name="create_time">
+        <comment>创建时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="918" parent="62" name="update_time">
+        <comment>修改时间</comment>
+        <data-type>datetime</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="919" parent="62" name="del_flag">
+        <comment>删除标记</comment>
+        <data-type>char(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="920" parent="62" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="921" parent="63" name="user_id">
+        <comment>主键ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="922" parent="63" name="username">
+        <comment>用户名</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(64)</data-type>
+      </column>
+      <column id="923" parent="63" name="password">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="924" parent="63" name="salt">
+        <comment>随机盐</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="925" parent="63" name="phone">
+        <comment>简介</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="926" parent="63" name="avatar">
+        <comment>头像</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="927" parent="63" name="dept_id">
+        <comment>部门ID</comment>
+        <data-type>int</data-type>
+      </column>
+      <column id="928" parent="63" name="create_time">
+        <comment>创建时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="929" parent="63" name="update_time">
+        <mandatory>1</mandatory>
+        <data-type>timestamp</data-type>
+        <default-expression>&apos;CURRENT_TIMESTAMP&apos;</default-expression>
+      </column>
+      <column id="930" parent="63" name="lock_flag">
+        <comment>0-正常，9-锁定</comment>
+        <data-type>char(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="931" parent="63" name="del_flag">
+        <comment>0-正常，1-删除</comment>
+        <data-type>char(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="932" parent="63" name="IDX_sys_user_username">
+        <columns>username</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="933" parent="63" name="PRIMARY">
+        <columns>user_id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="934" parent="64" name="user_id">
+        <comment>用户ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="935" parent="64" name="role_id">
+        <comment>角色ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <key id="936" parent="64" name="PRIMARY">
+        <columns>user_id
+role_id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="937" parent="65" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="938" parent="65" name="app_name">
+        <comment>执行器AppName</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(64)</data-type>
+      </column>
+      <column id="939" parent="65" name="title">
+        <comment>执行器名称</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(12)</data-type>
+      </column>
+      <column id="940" parent="65" name="address_type">
+        <comment>执行器地址类型：0=自动注册、1=手动录入</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="941" parent="65" name="address_list">
+        <comment>执行器地址列表，多地址逗号分隔</comment>
+        <data-type>varchar(512)</data-type>
+      </column>
+      <key id="942" parent="65" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="943" parent="66" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="944" parent="66" name="job_group">
+        <comment>执行器主键ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="945" parent="66" name="job_cron">
+        <comment>任务执行CRON</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(128)</data-type>
+      </column>
+      <column id="946" parent="66" name="job_desc">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="947" parent="66" name="add_time">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="948" parent="66" name="update_time">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="949" parent="66" name="author">
+        <comment>作者</comment>
+        <data-type>varchar(64)</data-type>
+      </column>
+      <column id="950" parent="66" name="alarm_email">
+        <comment>报警邮件</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="951" parent="66" name="executor_route_strategy">
+        <comment>执行器路由策略</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="952" parent="66" name="executor_handler">
+        <comment>执行器任务handler</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="953" parent="66" name="executor_param">
+        <comment>执行器任务参数</comment>
+        <data-type>varchar(512)</data-type>
+      </column>
+      <column id="954" parent="66" name="executor_block_strategy">
+        <comment>阻塞处理策略</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="955" parent="66" name="executor_timeout">
+        <comment>任务执行超时时间，单位秒</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="956" parent="66" name="executor_fail_retry_count">
+        <comment>失败重试次数</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="957" parent="66" name="glue_type">
+        <comment>GLUE类型</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="958" parent="66" name="glue_source">
+        <comment>GLUE源代码</comment>
+        <data-type>mediumtext</data-type>
+      </column>
+      <column id="959" parent="66" name="glue_remark">
+        <comment>GLUE备注</comment>
+        <data-type>varchar(128)</data-type>
+      </column>
+      <column id="960" parent="66" name="glue_updatetime">
+        <comment>GLUE更新时间</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="961" parent="66" name="child_jobid">
+        <comment>子任务ID，多个逗号分隔</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="962" parent="66" name="trigger_status">
+        <comment>调度状态：0-停止，1-运行</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="963" parent="66" name="trigger_last_time">
+        <comment>上次调度时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>bigint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="964" parent="66" name="trigger_next_time">
+        <comment>下次调度时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>bigint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="965" parent="66" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="966" parent="67" name="lock_name">
+        <comment>锁名称</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <key id="967" parent="67" name="PRIMARY">
+        <columns>lock_name</columns>
+        <primary>1</primary>
+      </key>
+      <column id="968" parent="68" name="id">
+        <mandatory>1</mandatory>
+        <data-type>bigint</data-type>
+      </column>
+      <column id="969" parent="68" name="job_group">
+        <comment>执行器主键ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="970" parent="68" name="job_id">
+        <comment>任务，主键ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="971" parent="68" name="executor_address">
+        <comment>执行器地址，本次执行的地址</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="972" parent="68" name="executor_handler">
+        <comment>执行器任务handler</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="973" parent="68" name="executor_param">
+        <comment>执行器任务参数</comment>
+        <data-type>varchar(512)</data-type>
+      </column>
+      <column id="974" parent="68" name="executor_sharding_param">
+        <comment>执行器任务分片参数，格式如 1/2</comment>
+        <data-type>varchar(20)</data-type>
+      </column>
+      <column id="975" parent="68" name="executor_fail_retry_count">
+        <comment>失败重试次数</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="976" parent="68" name="trigger_time">
+        <comment>调度-时间</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="977" parent="68" name="trigger_code">
+        <comment>调度-结果</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="978" parent="68" name="trigger_msg">
+        <comment>调度-日志</comment>
+        <data-type>text</data-type>
+      </column>
+      <column id="979" parent="68" name="handle_time">
+        <comment>执行-时间</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="980" parent="68" name="handle_code">
+        <comment>执行-状态</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="981" parent="68" name="handle_msg">
+        <comment>执行-日志</comment>
+        <data-type>text</data-type>
+      </column>
+      <column id="982" parent="68" name="alarm_status">
+        <comment>告警状态：0-默认、1-无需告警、2-告警成功、3-告警失败</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="983" parent="68" name="I_handle_code">
+        <columns>handle_code</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="984" parent="68" name="I_trigger_time">
+        <columns>trigger_time</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="985" parent="68" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="986" parent="69" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="987" parent="69" name="trigger_day">
+        <comment>调度-时间</comment>
+        <data-type>datetime</data-type>
+      </column>
+      <column id="988" parent="69" name="running_count">
+        <comment>运行中-日志数量</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="989" parent="69" name="suc_count">
+        <comment>执行成功-日志数量</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="990" parent="69" name="fail_count">
+        <comment>执行失败-日志数量</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="991" parent="69" name="i_trigger_day">
+        <columns>trigger_day</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="992" parent="69" name="i_trigger_day">
+        <columns>trigger_day</columns>
+        <underlying-index>i_trigger_day</underlying-index>
+      </key>
+      <key id="993" parent="69" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="994" parent="70" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="995" parent="70" name="job_id">
+        <comment>任务，主键ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="996" parent="70" name="glue_type">
+        <comment>GLUE类型</comment>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="997" parent="70" name="glue_source">
+        <comment>GLUE源代码</comment>
+        <data-type>mediumtext</data-type>
+      </column>
+      <column id="998" parent="70" name="glue_remark">
+        <comment>GLUE备注</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(128)</data-type>
+      </column>
+      <column id="999" parent="70" name="add_time">
+        <data-type>datetime</data-type>
+      </column>
+      <column id="1000" parent="70" name="update_time">
+        <data-type>datetime</data-type>
+      </column>
+      <key id="1001" parent="70" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="1002" parent="71" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="1003" parent="71" name="registry_group">
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="1004" parent="71" name="registry_key">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="1005" parent="71" name="registry_value">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="1006" parent="71" name="update_time">
+        <data-type>datetime</data-type>
+      </column>
+      <index id="1007" parent="71" name="i_g_k_v">
+        <columns>registry_group
+registry_key
+registry_value</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="1008" parent="71" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="1009" parent="72" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int</data-type>
+      </column>
+      <column id="1010" parent="72" name="username">
+        <comment>账号</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="1011" parent="72" name="password">
+        <comment>密码</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="1012" parent="72" name="role">
+        <comment>角色：0-普通用户、1-管理员</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint</data-type>
+      </column>
+      <column id="1013" parent="72" name="permission">
+        <comment>权限：执行器ID列表，多个逗号分割</comment>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <index id="1014" parent="72" name="i_username">
+        <columns>username</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="1015" parent="72" name="i_username">
+        <columns>username</columns>
+        <underlying-index>i_username</underlying-index>
+      </key>
+      <key id="1016" parent="72" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+    </database-model>
+  </data-source>
+</component>

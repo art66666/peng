@@ -1,0 +1,2 @@
+INFO     1.txt:my_log.py:29 *********登录接口开始测试*******
+INFO     1.txt:my_log.py:29 {'name': '不输入用户名', 'requests': {'method': 'get', 'headers': {'Authorization': 'Basic aW9tczppb21z'}, 'data': {'username': None, 'password': '7G8EqAsTPjxcn4Mmn7LSpQ==', 'grant_type': 'password'}}, 'except': {'username': None, 'msg': 'Bad credentials'}}

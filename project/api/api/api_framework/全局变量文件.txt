@@ -1,0 +1,7 @@
+文件名必须使用pytest.ini
+[pytest]
+# addopts = -m smoke
+
+
+markers =
+    smoke: marks test as smoke

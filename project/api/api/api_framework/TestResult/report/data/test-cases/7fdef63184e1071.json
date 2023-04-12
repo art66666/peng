@@ -1,0 +1,114 @@
+{
+  "uid" : "7fdef63184e1071",
+  "name" : "删除点位成功",
+  "fullName" : "TestCases.test_point.test_03_delete_point.TestDeletePoint#test_delete_point",
+  "historyId" : "85e4293869c72dfd8ddac5974d7e5023",
+  "time" : {
+    "start" : 1625794697371,
+    "stop" : 1625794697447,
+    "duration" : 76
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "login_api",
+    "time" : {
+      "start" : 1625794697201,
+      "stop" : 1625794697370,
+      "duration" : 169
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "cb3e70b2d41f194e",
+      "name" : "log",
+      "source" : "cb3e70b2d41f194e.txt",
+      "type" : "text/plain",
+      "size" : 549
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "login_api::0",
+    "time" : {
+      "start" : 1625794697448,
+      "stop" : 1625794697449,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "删除点位接口"
+  }, {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('login_api')"
+  }, {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCases.test_point"
+  }, {
+    "name" : "suite",
+    "value" : "test_03_delete_point"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestDeletePoint"
+  }, {
+    "name" : "host",
+    "value" : "WIN-SUR8JRUF123"
+  }, {
+    "name" : "thread",
+    "value" : "1968-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCases.test_point.test_03_delete_point"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "delete",
+    "value" : "{'data': {'ids': 21572}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "@pytest.mark.usefixtures('login_api')", "smoke" ]
+  },
+  "source" : "7fdef63184e1071.json",
+  "parameterValues" : [ "{'data': {'ids': 21572}}" ]
+}

@@ -1,0 +1,43 @@
+-
+  name: 正常登录
+  requests:
+    method: get
+    headers:
+      Authorization: Basic aW9tczppb21z
+    data:
+      username: admin
+      password: 7G8EqAsTPjxcn4Mmn7LSpQ==
+      grant_type: password
+  except:
+      username: admin
+      msg: ""
+
+
+-
+  name: 不输入密码
+  requests:
+    method: get
+    headers:
+      Authorization: Basic aW9tczppb21z
+    data:
+      username: admin
+      password:
+      grant_type: password
+  except:
+     username:
+     msg: Bad credentials
+
+-
+  name: 不输入用户名
+  requests:
+    method: get
+    headers:
+      Authorization: Basic aW9tczppb21z
+    data:
+      username:
+      password: 7G8EqAsTPjxcn4Mmn7LSpQ==
+      grant_type: password
+  except:
+     username:
+     msg: Bad credentials
+

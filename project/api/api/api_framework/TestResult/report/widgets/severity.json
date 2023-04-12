@@ -1,0 +1,121 @@
+[ {
+  "uid" : "7fdef63184e1071",
+  "name" : "删除点位成功",
+  "time" : {
+    "start" : 1625794697371,
+    "stop" : 1625794697447,
+    "duration" : 76
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "ff8afc615aa558d",
+  "name" : "正常新增数据",
+  "time" : {
+    "start" : 1625794696972,
+    "stop" : 1625794697097,
+    "duration" : 125
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "18c0bb03aee9c4e7",
+  "name" : "正常上传图片",
+  "time" : {
+    "start" : 1625794697612,
+    "stop" : 1625794697760,
+    "duration" : 148
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "f4c6d649d5bc354b",
+  "name" : "不输入密码",
+  "time" : {
+    "start" : 1625794696003,
+    "stop" : 1625794696078,
+    "duration" : 75
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5c38281a458e9d6f",
+  "name" : "不输入设备编码",
+  "time" : {
+    "start" : 1625794695770,
+    "stop" : 1625794695808,
+    "duration" : 38
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "68c310e9ac3dcbed",
+  "name" : "正常登录",
+  "time" : {
+    "start" : 1625794695814,
+    "stop" : 1625794695999,
+    "duration" : 185
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "9c7b4dd0567ac240",
+  "name" : "正常新增",
+  "time" : {
+    "start" : 1625794695546,
+    "stop" : 1625794695766,
+    "duration" : 220
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "8dc3dcb83175b004",
+  "name" : "查询房间数据",
+  "time" : {
+    "start" : 1625794696734,
+    "stop" : 1625794696812,
+    "duration" : 78
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "e0836c0c16085e2f",
+  "name" : "不输入用户名",
+  "time" : {
+    "start" : 1625794696082,
+    "stop" : 1625794696308,
+    "duration" : 226
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "a66d2bf7c60d8e11",
+  "name" : "正常上传文件",
+  "time" : {
+    "start" : 1625794697764,
+    "stop" : 1625794697919,
+    "duration" : 155
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "bd907f18ca5ca265",
+  "name" : "test_menu",
+  "time" : {
+    "start" : 1625794696511,
+    "stop" : 1625794696566,
+    "duration" : 55
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "994629ee95836f8e",
+  "name" : "新增重复数据",
+  "time" : {
+    "start" : 1625794697102,
+    "stop" : 1625794697195,
+    "duration" : 93
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

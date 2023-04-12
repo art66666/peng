@@ -1,0 +1,117 @@
+{
+  "uid" : "ff8afc615aa558d",
+  "name" : "正常新增数据",
+  "fullName" : "TestCases.test_point.test_02_insert_point.TestInsertPoint#test_insert_point",
+  "historyId" : "27e89932c3f77aa7c3f801d16c716ffd",
+  "time" : {
+    "start" : 1625794696972,
+    "stop" : 1625794697097,
+    "duration" : 125
+  },
+  "description" : "请求body==>> {'code': None, 'deviceCode': 30022201001030301030100100003, 'enableStatus': 0, 'id': 46, 'infoCode': None, 'lineCode': '01', 'partCode': None, 'pcode': None, 'pointCode': 4732028992712414856706, 'pointName': '测试数据', 'pointType': 1, 'roomCode': '00101', 'stationCode': '001', 'useTo': 0}",
+  "descriptionHtml" : "<p>请求body==&gt;&gt; {'code': None, 'deviceCode': 30022201001030301030100100003, 'enableStatus': 0, 'id': 46, 'infoCode': None, 'lineCode': '01', 'partCode': None, 'pcode': None, 'pointCode': 4732028992712414856706, 'pointName': '测试数据', 'pointType': 1, 'roomCode': '00101', 'stationCode': '001', 'useTo': 0}</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "login_api",
+    "time" : {
+      "start" : 1625794696817,
+      "stop" : 1625794696972,
+      "duration" : 155
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "请求body==>> {'code': None, 'deviceCode': 30022201001030301030100100003, 'enableStatus': 0, 'id': 46, 'infoCode': None, 'lineCode': '01', 'partCode': None, 'pcode': None, 'pointCode': 4732028992712414856706, 'pointName': '测试数据', 'pointType': 1, 'roomCode': '00101', 'stationCode': '001', 'useTo': 0}",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "80800682f0f85b2d",
+      "name" : "log",
+      "source" : "80800682f0f85b2d.txt",
+      "type" : "text/plain",
+      "size" : 8355
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "login_api::0",
+    "time" : {
+      "start" : 1625794697197,
+      "stop" : 1625794697197,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "新增点位接口"
+  }, {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('login_api')"
+  }, {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCases.test_point"
+  }, {
+    "name" : "suite",
+    "value" : "test_02_insert_point"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestInsertPoint"
+  }, {
+    "name" : "host",
+    "value" : "WIN-SUR8JRUF123"
+  }, {
+    "name" : "thread",
+    "value" : "1968-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCases.test_point.test_02_insert_point"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "insert",
+    "value" : "{'name': '正常新增数据', 'method': 'post', 'data': {'code': None, 'deviceCode': 30022201001030301030100100003, 'enableStatus': 0, 'id': 46, 'infoCode': None, 'lineCode': '01', 'partCode': None, 'pcode': None, 'pointCode': 4732028992712414856706, 'pointName': '测试数据', 'pointType': 1, 'roomCode': '00101', 'stationCode': '001', 'useTo': 0}, 'except': {'msg': '保存成功'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "@pytest.mark.usefixtures('login_api')", "smoke" ]
+  },
+  "source" : "ff8afc615aa558d.json",
+  "parameterValues" : [ "{'name': '正常新增数据', 'method': 'post', 'data': {'code': None, 'deviceCode': 30022201001030301030100100003, 'enableStatus': 0, 'id': 46, 'infoCode': None, 'lineCode': '01', 'partCode': None, 'pcode': None, 'pointCode': 4732028992712414856706, 'pointName': '测试数据', 'pointType': 1, 'roomCode': '00101', 'stationCode': '001', 'useTo': 0}, 'except': {'msg': '保存成功'}}" ]
+}

@@ -1,0 +1,48 @@
+-
+  name: 正常新增
+  method: post
+  datas:
+    deviceCode: "3422011"
+    deviceName : "测试数据"
+    deviceTypes : ["03", "0301", "0301001"]
+    functionalCode : "0101001"
+    largeType : "03"
+    lineCode : "01"
+    lineStationRoom : ["01", "001", "00101"]
+    midType: "0301"
+    locationCode : "0100100101005"
+    protectionFlag : "0"
+    roomCode : "00101"
+    smallTypeCode : "0301001"
+    stationCode : "001"
+    status : "0"
+  except:
+    msg: "保存成功"
+  check_sql:
+     before_sql: select max(id) from i_device_info
+     after_sql: select max(id) from i_device_info
+
+
+-
+  name: 不输入设备编码
+  method: post
+  datas:
+    deviceCode: " "
+    deviceName : "测试数据"
+    deviceTypes : ["03", "0301", "0301001"]
+    functionalCode : "0101001"
+    largeType : "03"
+    lineCode : "01"
+    lineStationRoom : ["01", "001", "00101"]
+    midType: "0301"
+    locationCode : "0100100101005"
+    protectionFlag : "0"
+    roomCode : "00101"
+    smallTypeCode : "0301001"
+    stationCode : "001"
+    status : "0"
+  except:
+    msg: "设备编码不能为空"
+  check_sql:
+     before_sql:
+     after_sql: select max(id) from i_device_info

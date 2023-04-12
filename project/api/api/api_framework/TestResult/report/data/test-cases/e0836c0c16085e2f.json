@@ -1,0 +1,81 @@
+{
+  "uid" : "e0836c0c16085e2f",
+  "name" : "不输入用户名",
+  "fullName" : "TestCases.test_login.test_login.TestLogin#test_login",
+  "historyId" : "c634e9669847a0fa8a0cf1f9f619bdff",
+  "time" : {
+    "start" : 1625794696082,
+    "stop" : 1625794696308,
+    "duration" : 226
+  },
+  "description" : "请求body==>> {'username': None, 'password': '7G8EqAsTPjxcn4Mmn7LSpQ==', 'grant_type': 'password'}",
+  "descriptionHtml" : "<p>请求body==&gt;&gt; {'username': None, 'password': '7G8EqAsTPjxcn4Mmn7LSpQ==', 'grant_type': 'password'}</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "description" : "请求body==>> {'username': None, 'password': '7G8EqAsTPjxcn4Mmn7LSpQ==', 'grant_type': 'password'}",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "bca4424fc65bb284",
+      "name" : "log",
+      "source" : "bca4424fc65bb284.txt",
+      "type" : "text/plain",
+      "size" : 537
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "登录接口"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCases.test_login"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLogin"
+  }, {
+    "name" : "host",
+    "value" : "WIN-SUR8JRUF123"
+  }, {
+    "name" : "thread",
+    "value" : "1968-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCases.test_login.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "args",
+    "value" : "{'name': '不输入用户名', 'requests': {'method': 'get', 'headers': {'Authorization': 'Basic aW9tczppb21z'}, 'data': {'username': None, 'password': '7G8EqAsTPjxcn4Mmn7LSpQ==', 'grant_type': 'password'}}, 'except': {'username': None, 'msg': 'Bad credentials'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "e0836c0c16085e2f.json",
+  "parameterValues" : [ "{'name': '不输入用户名', 'requests': {'method': 'get', 'headers': {'Authorization': 'Basic aW9tczppb21z'}, 'data': {'username': None, 'password': '7G8EqAsTPjxcn4Mmn7LSpQ==', 'grant_type': 'password'}}, 'except': {'username': None, 'msg': 'Bad credentials'}}" ]
+}

@@ -1,0 +1,7 @@
+INFO     1.txt:my_log.py:27 *******测试接口前登陆操作*********
+INFO     1.txt:my_log.py:27 *******接口请求
+INFO     1.txt:my_log.py:27 ******存储access_token*******Bearer 5e4b5d16-8d50-4f87-a502-ed1a3849a891
+INFO     1.txt:my_log.py:27 删除接口操作前id为'21572'的删除状态为'1'
+INFO     1.txt:my_log.py:27 返回数据"操作成功"与数据断言"操作成功"一致，断言通过
+INFO     1.txt:my_log.py:27 返回值"1"与数据断言"1"一致，断言通过
+INFO     1.txt:my_log.py:27 ******接口测试结束******

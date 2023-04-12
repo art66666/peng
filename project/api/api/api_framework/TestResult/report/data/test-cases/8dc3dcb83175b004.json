@@ -1,0 +1,117 @@
+{
+  "uid" : "8dc3dcb83175b004",
+  "name" : "查询房间数据",
+  "fullName" : "TestCases.test_point.test_01_search_point.TestPoint#test_point",
+  "historyId" : "afdb4ee8d8fb1b7509f6e94277f31a6f",
+  "time" : {
+    "start" : 1625794696734,
+    "stop" : 1625794696812,
+    "duration" : 78
+  },
+  "description" : "请求body==>> {'size': '10000000', 'current': '1', 'lineCode': '01', 'stationCode': '001', 'roomCode': '00101'}",
+  "descriptionHtml" : "<p>请求body==&gt;&gt; {'size': '10000000', 'current': '1', 'lineCode': '01', 'stationCode': '001', 'roomCode': '00101'}</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "login_api",
+    "time" : {
+      "start" : 1625794696571,
+      "stop" : 1625794696734,
+      "duration" : 163
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "请求body==>> {'size': '10000000', 'current': '1', 'lineCode': '01', 'stationCode': '001', 'roomCode': '00101'}",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "dbbff259ab34425d",
+      "name" : "log",
+      "source" : "dbbff259ab34425d.txt",
+      "type" : "text/plain",
+      "size" : 368
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "login_api::0",
+    "time" : {
+      "start" : 1625794696813,
+      "stop" : 1625794696814,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "查询点位接口"
+  }, {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('login_api')"
+  }, {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCases.test_point"
+  }, {
+    "name" : "suite",
+    "value" : "test_01_search_point"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestPoint"
+  }, {
+    "name" : "host",
+    "value" : "WIN-SUR8JRUF123"
+  }, {
+    "name" : "thread",
+    "value" : "1968-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCases.test_point.test_01_search_point"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "search",
+    "value" : "{'name': '查询房间数据', 'method': 'get', 'data': {'size': '10000000', 'current': '1', 'lineCode': '01', 'stationCode': '001', 'roomCode': '00101'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "@pytest.mark.usefixtures('login_api')", "smoke" ]
+  },
+  "source" : "8dc3dcb83175b004.json",
+  "parameterValues" : [ "{'name': '查询房间数据', 'method': 'get', 'data': {'size': '10000000', 'current': '1', 'lineCode': '01', 'stationCode': '001', 'roomCode': '00101'}}" ]
+}

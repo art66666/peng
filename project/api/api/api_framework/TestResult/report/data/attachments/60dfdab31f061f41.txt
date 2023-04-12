@@ -1,0 +1,5 @@
+INFO     1.txt:my_log.py:27 ******上传接口测试开始*******
+INFO     1.txt:my_log.py:27 {'name': '正常上传文件', 'request': {'data': {'file': 'open(r"E:\\cqc\\apache-jmeter-5.1.1\\csv\\advanced.docx",\'rb\')'}}, 'except': {'msg': '上传成功！'}}
+INFO     1.txt:my_log.py:27 接口返回值"上传成功！"与数据断言"上传成功！"相等，断言通过
+INFO     1.txt:my_log.py:27 ******上传接口测试结束*******
+INFO     1.txt:my_log.py:27 ******接口测试结束******

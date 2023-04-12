@@ -1,0 +1,114 @@
+{
+  "uid" : "18c0bb03aee9c4e7",
+  "name" : "正常上传图片",
+  "fullName" : "TestCases.test_upload.test_upload.TestUpload#test_file_upload",
+  "historyId" : "442484b3a9c9d6ee879712af5c26c765",
+  "time" : {
+    "start" : 1625794697612,
+    "stop" : 1625794697760,
+    "duration" : 148
+  },
+  "description" : "请求body==>> {'file': 'open(r\"E:\\\\cqc\\\\apache-jmeter-5.1.1\\\\csv\\\\123.png\",\\'rb\\')'}",
+  "descriptionHtml" : "<p>请求body==&gt;&gt; {'file': 'open(r&quot;E:\\cqc\\apache-jmeter-5.1.1\\csv\\123.png&quot;,'rb')'}</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "login_api",
+    "time" : {
+      "start" : 1625794697453,
+      "stop" : 1625794697612,
+      "duration" : 159
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "请求body==>> {'file': 'open(r\"E:\\\\cqc\\\\apache-jmeter-5.1.1\\\\csv\\\\123.png\",\\'rb\\')'}",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "e985aae69b16c9cf",
+      "name" : "log",
+      "source" : "e985aae69b16c9cf.txt",
+      "type" : "text/plain",
+      "size" : 658
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "login_api::0",
+    "time" : {
+      "start" : 1625794697920,
+      "stop" : 1625794697921,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "测试上传接口"
+  }, {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('login_api')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCases.test_upload"
+  }, {
+    "name" : "suite",
+    "value" : "test_upload"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestUpload"
+  }, {
+    "name" : "host",
+    "value" : "WIN-SUR8JRUF123"
+  }, {
+    "name" : "thread",
+    "value" : "1968-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCases.test_upload.test_upload"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "upload",
+    "value" : "{'name': '正常上传图片', 'request': {'data': {'file': 'open(r\"E:\\\\cqc\\\\apache-jmeter-5.1.1\\\\csv\\\\123.png\",\\'rb\\')'}}, 'except': {'msg': '上传成功！'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "@pytest.mark.usefixtures('login_api')" ]
+  },
+  "source" : "18c0bb03aee9c4e7.json",
+  "parameterValues" : [ "{'name': '正常上传图片', 'request': {'data': {'file': 'open(r\"E:\\\\cqc\\\\apache-jmeter-5.1.1\\\\csv\\\\123.png\",\\'rb\\')'}}, 'except': {'msg': '上传成功！'}}" ]
+}

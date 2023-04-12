@@ -1,0 +1,7 @@
+INFO     1.txt:my_log.py:27 *******测试接口前登陆操作*********
+INFO     1.txt:my_log.py:27 *******接口请求
+INFO     1.txt:my_log.py:27 ******存储access_token*******Bearer 5e4b5d16-8d50-4f87-a502-ed1a3849a891
+INFO     1.txt:my_log.py:27 ******上传接口测试开始*******
+INFO     1.txt:my_log.py:27 {'name': '正常上传图片', 'request': {'data': {'file': 'open(r"E:\\cqc\\apache-jmeter-5.1.1\\csv\\123.png",\'rb\')'}}, 'except': {'msg': '上传成功！'}}
+INFO     1.txt:my_log.py:27 接口返回值"上传成功！"与数据断言"上传成功！"相等，断言通过
+INFO     1.txt:my_log.py:27 ******上传接口测试结束*******

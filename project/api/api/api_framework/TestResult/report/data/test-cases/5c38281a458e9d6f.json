@@ -1,0 +1,111 @@
+{
+  "uid" : "5c38281a458e9d6f",
+  "name" : "不输入设备编码",
+  "fullName" : "TestCases.test_device.test_insert_device.TestInsertDevice#test_insert_device",
+  "historyId" : "3c8251602a8bf9b65007781f65e1e57f",
+  "time" : {
+    "start" : 1625794695770,
+    "stop" : 1625794695808,
+    "duration" : 38
+  },
+  "description" : "请求body==>> {'deviceCode': ' ', 'deviceName': '测试数据', 'deviceTypes': ['03', '0301', '0301001'], 'functionalCode': '0101001', 'largeType': '03', 'lineCode': '01', 'lineStationRoom': ['01', '001', '00101'], 'midType': '0301', 'locationCode': '0100100101005', 'protectionFlag': '0', 'roomCode': '00101', 'smallTypeCode': '0301001', 'stationCode': '001', 'status': '0'}",
+  "descriptionHtml" : "<p>请求body==&gt;&gt; {'deviceCode': ' ', 'deviceName': '测试数据', 'deviceTypes': ['03', '0301', '0301001'], 'functionalCode': '0101001', 'largeType': '03', 'lineCode': '01', 'lineStationRoom': ['01', '001', '00101'], 'midType': '0301', 'locationCode': '0100100101005', 'protectionFlag': '0', 'roomCode': '00101', 'smallTypeCode': '0301001', 'stationCode': '001', 'status': '0'}</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "login_api",
+    "time" : {
+      "start" : 1625794695229,
+      "stop" : 1625794695544,
+      "duration" : 315
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "description" : "请求body==>> {'deviceCode': ' ', 'deviceName': '测试数据', 'deviceTypes': ['03', '0301', '0301001'], 'functionalCode': '0101001', 'largeType': '03', 'lineCode': '01', 'lineStationRoom': ['01', '001', '00101'], 'midType': '0301', 'locationCode': '0100100101005', 'protectionFlag': '0', 'roomCode': '00101', 'smallTypeCode': '0301001', 'stationCode': '001', 'status': '0'}",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "f3613d7f372aa000",
+      "name" : "log",
+      "source" : "f3613d7f372aa000.txt",
+      "type" : "text/plain",
+      "size" : 383
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "login_api::0",
+    "time" : {
+      "start" : 1625794695810,
+      "stop" : 1625794695810,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "@pytest.mark.usefixtures('login_api')"
+  }, {
+    "name" : "parentSuite",
+    "value" : "TestCases.test_device"
+  }, {
+    "name" : "suite",
+    "value" : "test_insert_device"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestInsertDevice"
+  }, {
+    "name" : "host",
+    "value" : "WIN-SUR8JRUF123"
+  }, {
+    "name" : "thread",
+    "value" : "1968-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "TestCases.test_device.test_insert_device"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "insert",
+    "value" : "{'name': '不输入设备编码', 'method': 'post', 'datas': {'deviceCode': ' ', 'deviceName': '测试数据', 'deviceTypes': ['03', '0301', '0301001'], 'functionalCode': '0101001', 'largeType': '03', 'lineCode': '01', 'lineStationRoom': ['01', '001', '00101'], 'midType': '0301', 'locationCode': '0100100101005', 'protectionFlag': '0', 'roomCode': '00101', 'smallTypeCode': '0301001', 'stationCode': '001', 'status': '0'}, 'except': {'msg': '设备编码不能为空'}, 'check_sql': {'before_sql': None, 'after_sql': 'select max(id) from i_device_info'}}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "@pytest.mark.usefixtures('login_api')" ]
+  },
+  "source" : "5c38281a458e9d6f.json",
+  "parameterValues" : [ "{'name': '不输入设备编码', 'method': 'post', 'datas': {'deviceCode': ' ', 'deviceName': '测试数据', 'deviceTypes': ['03', '0301', '0301001'], 'functionalCode': '0101001', 'largeType': '03', 'lineCode': '01', 'lineStationRoom': ['01', '001', '00101'], 'midType': '0301', 'locationCode': '0100100101005', 'protectionFlag': '0', 'roomCode': '00101', 'smallTypeCode': '0301001', 'stationCode': '001', 'status': '0'}, 'except': {'msg': '设备编码不能为空'}, 'check_sql': {'before_sql': None, 'after_sql': 'select max(id) from i_device_info'}}" ]
+}
