@@ -1,0 +1,73 @@
+adb shell getprop 获取的属性值
+1.使用版本对比脚本python diffAppsForOTA.py -s device_id导出测试版本的版本信息
+2.使用命令对两次查询结果进行对比：python diffAppsForOTA.py -analy true -files file1 file2 （file1和files 为上一步命令查出的OTA前后的txt文件）
+
+traces抓取
+开发者模式系统跟踪开启，adb pull /data/local/traces
+转至元数据结尾
+由 王文雨创建, 最终由 李占清修改于 十月 12, 2021转至元数据起始
+1	抓取logcat	                adb logcat -b main -b system -b radio -v threadtime > logcat.txt
+2	抓取bugreport	adb bugreport > bugreport.txt
+3	抓取kmsg	                adb shell cat /proc/kmsg > kmsg.txt
+4	抓取dmesg	adb shell dmesg > d:\dmesg.log
+5	进入fastboot模式	adb reboot bootloader
+6	进入edl模式升级	先进入fastboot模式，然后执行fastboot oem edl
+7	常亮屏指令	adb shell settings put system screen_off_timeout 2147483647
+8	刷入.elf文件的命令	adb reboot bootloader
+fastboot flash xbl_ab xbl.elf
+fastboot flash xbl_config_ab xbl_config.elf
+fastboot reboot
+9	抓取offline log	adb root
+adb shell
+setprop persist.sys.offlinelog.kernel true
+setprop persist.sys.offlinelog.logcat true
+打开后用如下命令确认是否生效
+getprop persist.sys.offlinelog.kernel
+getprop persist.sys.offlinelog.logcat
+10	pull log命令	adb root
+adb pull /data/local/（log：名称）
+11	鬼点抓log命令	
+adb root
+adb shell cat /proc/nvt_diff
+
+开发者选项-日志级别选debug，出现问题抓284
+
+12	MTK平台抓LOG	
+1.开机*#*#3646633#*#*，左右滑到log and Debugging，打开mtklog。
+2.关闭mtklog，log存放地址界面上有。
+
+使用#*#3466633#*# log导出：adb pull /data/debuglogger
+
+13	284log	*#*#284#*#*
+14	modemlog	*#*#995995#*#*
+15	音频log	*#*#996996#*#*
+16	GPS log	*#*#477477#*#*
+17	sensor log	*#*#334334#*#*
+18	蓝牙 log	*#*#5959#*#*
+19	WIFI log	*#*#9434#*#*
+20	Crash模式	QPST软件抓取
+21	996log指令	*#*#996#*#*
+22	997log指令	*#*#997#*#*
+23	kernel log	
+logcat -b kernel > /sdcard/kernel.log  
+
+debug:*#*#3646633#*#*，开启所有log      adb pull /data/debuglogger/
+ 
+工厂相机售后标定是否存在：cd  mnt/vendor/persist/camera/  ls -l  存在文件即标定
+
+重装手机后的问题
+
+1. 重启手机
+2. 重新 root手机，命令如下
+	adb root; 
+	adb remount; 
+	adb disable-verity;  （可以直接用as里面的task了）
+	adb reboot 
+	
+adb reboot bootloader
+
+
+如果还无法安装相机
+这 采用push的方式将 app推送到手机
+1.  adb shell pm path com.android.camera （查看相册地址）
+2. adb push   /Users/jaelyn/Documents/Mi/MiuiCamProject/MiuiCamera/app/build/outputs/apk/cn/debug/MiuiCamera.apk   /system/priv-app/MiuiCamera/MiuiCamera.apk
